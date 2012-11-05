@@ -1,0 +1,10 @@
+#! /usr/bin/bash
+
+# Source all local profiles
+
+for file in .bash_kao .bash_excelcient
+do
+    if [ -f $file ]; then
+        source $file
+    fi
+done

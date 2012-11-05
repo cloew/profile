@@ -1,0 +1,109 @@
+#! /usr/bin/bash
+
+export c_drive="/cygdrive/c"
+export dev_dir="$c_drive/dev"
+
+# Paths to current project
+#export src=$pkmn_src
+#export test=$pkmn_test
+#export rsrc=$pkmn_rsrc
+#export cb="GUI-Refactor"
+export src=""
+export test=""
+export rsrc=""
+export cb=""
+
+# Aliases
+
+# Core Aliases
+alias adev="cd $dev_dir"
+alias q="exit"
+
+# Git Aliases
+alias grao="git remote add origin"
+alias grro="git remote rm origin"
+alias gb="git branch"
+alias gch="git checkout"
+alias gm="git merge"
+alias ga="git add"
+alias gci="git commit -m"
+alias gps="git push"
+alias gpsom="git push origin master"
+alias gpscb="git push origin $cb"
+alias gpl="git pull"
+alias gplom="git pull origin master"
+alias gplcb="git pull origin $cb"
+alias gs="git status"
+alias grm="git rm"
+alias gmv="git mv"
+
+# Cygwin Aliases
+alias cyg="/bin/mintty.exe -i /Cygwin-Terminal.ico &"
+alias cs="cygstart"
+
+# Python Aliases
+alias m="python main.py"
+alias t="python test.py"
+alias mktest="cp $src/Test/testcase_template.py"
+alias mktestdir="bash mkTestDir.sh"
+alias wp="/$c_drivePython26/python.exe"
+alias wm="wp main.py"
+alias wt="wp test.py"
+
+# Rails Aliases
+alias rs="rails server"
+alias rgs="rails generate scaffold"
+
+# Notepad++ Aliases
+alias np="notepad++.exe"
+alias np-new="notepad++.exe -multiInst -nosession"
+
+# Profile Alias
+alias brc="npm $profile"
+
+# SQLite Alias
+alias ss="sqlitestudio.exe &"
+
+# Generic Helper Functions
+function asrc() {
+    cd $src
+}
+
+function start() {
+    asrc
+    if [ ! -z "$test" ]; then
+        np-test
+    fi
+    sleep 1
+    if [ ! -z "$rsrc" ]; then
+        np-rsrc
+    fi
+    sleep 1
+    npm
+}
+
+# Notepad Functions
+function npm() {
+    np -multiInst &
+}
+
+function np-test() {
+    paths="$(cygpath -w $test)"
+    np-new $paths &
+}
+
+function np-rsrc() {
+    paths="$(cygpath -w $rsrc)"
+    np-new $paths &
+}
+
+# Python Functions
+function mkpydir() {
+    mkdir $1
+    touch $1/__init__.py
+}
+
+function mktestdir() {
+    mkpydir $1
+    touch $1/suite.py
+}

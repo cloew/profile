@@ -1,0 +1,44 @@
+#! /usr/bin/bash
+
+# Kao Tessur Paths
+export kao_dir="$dev_dir/Kao_Tessur"
+
+# Pokemon paths
+export pkmn_src=$kao_dir/Pokemon-Python/src
+export pkmn_test=$pkmn_src/test.py\ $pkmn_src/Test/test_helper.py
+export pkmn_rsrc=$pkmn_src/resources/trainerdex.xml\ $pkmn_src/resources/attackdex.xml\ $pkmn_src/resources/pokedex.xml\ $pkmn_src/resources/abilitydex.xml\ $pkmn_src/resources/tags.py
+
+# Nyt Owl paths
+export nytowl_src=$kao_dir/NytOwlTextEditor/src
+
+# PyMine paths
+export pymine_src=$kao_dir/PyMine/src
+
+# Rant dir
+export rant_dir=~/../Rants
+
+# Pkmn Commands
+alias a-pkmn="cd $pkmn_src"
+alias s-pkmn="pkmn; start"
+alias db="python dbtest.py"
+alias aac="python pkmn_db_front.py ADD ATTACK"
+alias mkeffect="bash $poke_src/scripts/mkeffect.sh"
+
+# Project Functions
+function pkmn() {
+    src=$poke_src
+    test=$poketest
+    rsrc=$pokersrc
+}
+
+function nytowl() {
+    src=$nytowl_src
+    test=""
+    rsrc=""
+}
+
+function pymine() {
+    src=$pymine_src
+    test=""
+    rsrc=""
+}
