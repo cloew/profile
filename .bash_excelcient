@@ -6,20 +6,6 @@ export exc_dir="$dev_dir/Excelcient"
 # Prosperion paths
 export prosp_src="$dev_dir/Prosperion"
 
-# Pokemon paths
-export pkmn_src=$kao_dir/Pokemon-Python/src
-export pkmn_test=$pkmn_src/test.py\ $pkmn_src/Test/test_helper.py
-export pkmn_rsrc=$pkmn_src/resources/trainerdex.xml\ $pkmn_src/resources/attackdex.xml\ $pkmn_src/resources/pokedex.xml\ $pkmn_src/resources/abilitydex.xml\ $pkmn_src/resources/tags.py
-
-# Nyt Owl paths
-export nytowl_src=$kao_dir/NytOwlTextEditor/src
-
-# PyMine paths
-export pymine_src=$kao_dir/PyMine/src
-
-# Rant dir
-export rant_dir=~/../Rants
-
 # Prosperion Aliases
 alias a-prosp="cd $prosp_src"
 alias s-prosp="prosp; start"

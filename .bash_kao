@@ -3,19 +3,28 @@
 # Kao Tessur Paths
 export kao_dir="$dev_dir/Kao_Tessur"
 
+# Nyt Owl paths
+export nytowl_src=$kao_dir/NytOwlTextEditor/src
+
 # Pokemon paths
 export pkmn_src=$kao_dir/Pokemon-Python/src
 export pkmn_test=$pkmn_src/test.py\ $pkmn_src/Test/test_helper.py
 export pkmn_rsrc=$pkmn_src/resources/trainerdex.xml\ $pkmn_src/resources/attackdex.xml\ $pkmn_src/resources/pokedex.xml\ $pkmn_src/resources/abilitydex.xml\ $pkmn_src/resources/tags.py
 
-# Nyt Owl paths
-export nytowl_src=$kao_dir/NytOwlTextEditor/src
-
 # PyMine paths
 export pymine_src=$kao_dir/PyMine/src
 
 # Rant dir
-export rant_dir=~/../Rants
+export rant_dir=$kao_dir/Rants
+
+# Kao Tessur Commands
+alias akao="cd $kao_dir"
+
+# Nyt Owl Commands
+alias note="python $nytowl_src/main.py"
+alias a-nytowl="cd $nytowl_src"
+alias s-nytowl="nytowl; start"
+alias rant="cd $rant_dir; note"
 
 # Pkmn Commands
 alias a-pkmn="cd $pkmn_src"
@@ -23,6 +32,10 @@ alias s-pkmn="pkmn; start"
 alias db="python dbtest.py"
 alias aac="python pkmn_db_front.py ADD ATTACK"
 alias mkeffect="bash $poke_src/scripts/mkeffect.sh"
+
+# PyMine Commands
+alias a-pymine="cd $pymine_src"
+alias s-pymine="pymine; start"
 
 # Project Functions
 function pkmn() {
