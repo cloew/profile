@@ -42,8 +42,10 @@ alias cyg="/bin/mintty.exe -i /Cygwin-Terminal.ico &"
 alias cs="cygstart"
 
 # Python Aliases
+alias py="python"
 alias m="python main.py"
 alias t="python test.py"
+alias py-install="python setup.py install"
 alias mktest="cp $src/Test/testcase_template.py"
 alias mktestdir="bash mkTestDir.sh"
 alias wp="/$c_drivePython26/python.exe"
