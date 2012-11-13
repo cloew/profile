@@ -38,7 +38,7 @@ alias grm="git rm"
 alias gmv="git mv"
 
 # Cygwin Aliases
-alias cyg="/bin/mintty.exe -i /Cygwin-Terminal.ico &"
+#alias cyg="/bin/mintty.exe -i /Cygwin-Terminal.ico &"
 alias cs="cygstart"
 
 # Python Aliases
@@ -82,6 +82,14 @@ function start() {
     fi
     sleep 1
     npm
+}
+
+function cyg()
+{
+    __currDir=`pwd`
+    cd ~
+    /bin/mintty.exe -i /Cygwin-Terminal.ico &
+    cd $__currDir
 }
 
 # Notepad Functions

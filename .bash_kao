@@ -7,7 +7,7 @@ export kao_dir="$dev_dir/Kao_Tessur"
 export nytowl_src=$kao_dir/NytOwlTextEditor/src
 
 # Pokemon paths
-export pkmn_src=$kao_dir/Pokemon-Python/src
+export pkmn_src=$kao_dir/PokemonPython/src
 export pkmn_test=$pkmn_src/test.py\ $pkmn_src/Test/test_helper.py
 export pkmn_rsrc=$pkmn_src/resources/trainerdex.xml\ $pkmn_src/resources/attackdex.xml\ $pkmn_src/resources/pokedex.xml\ $pkmn_src/resources/abilitydex.xml\ $pkmn_src/resources/tags.py
 

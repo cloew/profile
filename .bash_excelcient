@@ -4,7 +4,7 @@
 export exc_dir="$dev_dir/Excelcient"
 
 # Prosperion paths
-export prosp_src="$dev_dir/Prosperion"
+export prosp_src="$exc_dir/Prosperion"
 
 # Prosperion Aliases
 alias a-prosp="cd $prosp_src"
