@@ -2,12 +2,9 @@
 
 case $OSTYPE in
     cygwin )
-		export c_drive="/cygdrive/c"
-		export root_dir="$c_drive"
-		
-		# Cygwin Aliases
-		alias cs="cygstart"
-		alias cyg="cs /bin/mintty.exe -i /Cygwin-Terminal.ico" ;;
+		if [ -f ~/.bash_cygwin ]; then
+			source ~/.bash_cygwin
+		fi ;;
     linux-gnu )
         echo "Getting Linux aliases"
 		export root_dir="/" ;;
