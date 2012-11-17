@@ -8,6 +8,10 @@ alias cs="cygstart"
 alias cyg="cs /bin/mintty.exe -i /Cygwin-Terminal.ico"
 
 # Cygwin Functions
+function w-path() {
+	cygpath -w "$@"
+}
+
 function run() {
 	cs "$@"
 }

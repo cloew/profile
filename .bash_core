@@ -94,6 +94,10 @@ function npm() {
     np -multiInst &
 }
 
+function np-w() {
+	np-new $(w-path $@)
+}
+
 function np-test() {
     paths="$(cygpath -w $test)"
     np-new $paths &
