@@ -54,7 +54,7 @@ alias rs="rails server"
 alias rgs="rails generate scaffold"
 
 # Notepad++ Aliases
-alias np="cs $c_drive/Program\ Files\ \(x86\)/Notepad++/notepad++.exe"
+alias np="run \"$c_drive/Program Files (x86)/Notepad++/notepad++.exe\""
 alias np-new="np -multiInst -nosession"
 
 # Profile Alias
@@ -83,7 +83,7 @@ function start() {
 
 # Git Helpers
 function g-start() {
-    git init
+    gi
     grao $1
     gpl origin master
     gps -u origin master

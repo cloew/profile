@@ -9,5 +9,5 @@ alias cyg="cs /bin/mintty.exe -i /Cygwin-Terminal.ico"
 
 # Cygwin Functions
 function run() {
-	cs $@
+	cs "$@"
 }

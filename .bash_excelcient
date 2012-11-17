@@ -10,7 +10,6 @@ export prosp_src="$exc_dir/Prosperion"
 alias a-prosp="cd $prosp_src"
 alias s-prosp="prosp; start"
 
-
 function prosp() {
     src=$prosp_src
     test=""
