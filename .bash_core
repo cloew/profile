@@ -20,6 +20,7 @@ alias adev="cd $dev_dir"
 alias q="exit"
 
 # Git Aliases
+alias gi="git init"
 alias grao="git remote add origin"
 alias grro="git remote rm origin"
 alias gb="git branch"
@@ -38,8 +39,8 @@ alias grm="git rm"
 alias gmv="git mv"
 
 # Cygwin Aliases
-#alias cyg="/bin/mintty.exe -i /Cygwin-Terminal.ico &"
 alias cs="cygstart"
+alias cyg="cs /bin/mintty.exe -i /Cygwin-Terminal.ico &"*
 
 # Python Aliases
 alias py="python"
@@ -84,12 +85,12 @@ function start() {
     npm
 }
 
-function cyg()
-{
-    __currDir=`pwd`
-    cd ~
-    /bin/mintty.exe -i /Cygwin-Terminal.ico &
-    cd $__currDir
+# Git Helpers
+function g-start() {
+    git init
+    grao $1
+    gpl origin master
+    gps -u origin master
 }
 
 # Notepad Functions
