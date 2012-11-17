@@ -1,7 +1,7 @@
 #! /usr/bin/bash
 
 # Kao Tessur Paths
-export kao_dir="$dev_dir/Kao_Tessur"
+export kao_dir="$dev_dir/KaoTessur"
 
 # Nyt Owl paths
 export nytowl_src=$kao_dir/NytOwlTextEditor/src
