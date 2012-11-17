@@ -1,7 +1,6 @@
 #! /usr/bin/bash
 
-export c_drive="/cygdrive/c"
-export dev_dir="$c_drive/dev"
+export dev_dir="$root_dir/dev"
 
 # Paths to current project
 #export src=$pkmn_src
@@ -38,10 +37,6 @@ alias gs="git status"
 alias grm="git rm"
 alias gmv="git mv"
 
-# Cygwin Aliases
-alias cs="cygstart"
-alias cyg="cs /bin/mintty.exe -i /Cygwin-Terminal.ico"
-
 # Python Aliases
 alias py="python"
 alias m="python main.py"
@@ -49,7 +44,7 @@ alias t="python test.py"
 alias py-install="python setup.py install"
 alias mktest="cp $src/Test/testcase_template.py"
 alias mktestdir="bash mkTestDir.sh"
-alias wp="/$c_drivePython26/python.exe"
+alias wp="/$c_drive/Python26/python.exe"
 alias wm="wp main.py"
 alias wt="wp test.py"
 
@@ -58,8 +53,8 @@ alias rs="rails server"
 alias rgs="rails generate scaffold"
 
 # Notepad++ Aliases
-alias np="notepad++.exe"
-alias np-new="notepad++.exe -multiInst -nosession"
+alias np="cs $c_drive/Program\ Files\ \(x86\)/Notepad++/notepad++.exe"
+alias np-new="np -multiInst -nosession"
 
 # Profile Alias
 alias brc="npm $profile"
