@@ -40,7 +40,7 @@ alias gmv="git mv"
 
 # Cygwin Aliases
 alias cs="cygstart"
-alias cyg="cs /bin/mintty.exe -i /Cygwin-Terminal.ico &"*
+alias cyg="cs /bin/mintty.exe -i /Cygwin-Terminal.ico"
 
 # Python Aliases
 alias py="python"
