@@ -2,6 +2,7 @@
 
 export dev_dir="$root_dir/dev"
 export ide_dir="$root_dir/IDEs"
+export test_dir="$dev_dir/Test"
 
 # Paths to current project
 #export src=$pkmn_src
@@ -17,6 +18,8 @@ export cb=""
 
 # Core Aliases
 alias adev="cd $dev_dir"
+alias aIDEs="cd $ide_dir"
+alias atest="cd $test_dir"
 alias q="exit"
 
 # Git Aliases
