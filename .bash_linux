@@ -1,0 +1,7 @@
+#! /usr/bin/bash
+
+export root_dir="/"
+
+function run() {
+	./"$@"
+}
