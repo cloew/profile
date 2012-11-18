@@ -6,6 +6,7 @@ case $OSTYPE in
 			source ~/.bash_cygwin
 		fi ;;
     linux-gnu )
-        echo "Getting Linux aliases"
-		export root_dir="/" ;;
+        if [ -f ~/.bash_linux ]; then
+			source ~/.bash_linux
+		fi ;;
 esac
