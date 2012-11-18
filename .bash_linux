@@ -1,8 +1,8 @@
 #! /usr/bin/bash
 
-export root_dir="/"
+export root_dir="/home"
 alias install="sudo apt-get install"
 
 function run() {
-	./"$@"
+	"$@" &
 }

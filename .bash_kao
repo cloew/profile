@@ -3,11 +3,16 @@
 # Kao Tessur Paths
 export kao_dir="$dev_dir/KaoTessur"
 
+# Kao Console paths
+export kao_console_dir=$kao_dir/KaoConsole
+
 # Nyt Owl paths
-export nytowl_src=$kao_dir/NytOwlTextEditor/src
+export nytowl_dir=$kao_dir/NytOwlTextEditor
+export nytowl_src=$nytowl_dir/src
 
 # Pokemon paths
-export pkmn_src=$kao_dir/PokemonPython/src
+export pkmn_dir=$kao_dir/PokemonPython
+export pkmn_src=$pkmn_dir/src
 export pkmn_test=$pkmn_src/test.py\ $pkmn_src/Test/test_helper.py
 export pkmn_rsrc=$pkmn_src/resources/trainerdex.xml\ $pkmn_src/resources/attackdex.xml\ $pkmn_src/resources/pokedex.xml\ $pkmn_src/resources/abilitydex.xml\ $pkmn_src/resources/tags.py
 

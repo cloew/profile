@@ -4,14 +4,14 @@
 export exc_dir="$dev_dir/Excelcient"
 
 # Prosperion paths
-export prosp_src="$exc_dir/Prosperion"
+export prosp_dir="$exc_dir/Prosperion"
 
 # Prosperion Aliases
-alias a-prosp="cd $prosp_src"
+alias a-prosp="cd $prosp_dir"
 alias s-prosp="prosp; start"
 
 function prosp() {
-    src=$prosp_src
+    src=$prosp_dir
     test=""
     rsrc=""
 }
