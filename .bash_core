@@ -1,6 +1,7 @@
 #! /usr/bin/bash
 
 export dev_dir="$root_dir/dev"
+export ide_dir="$root_dir/IDEs"
 
 # Paths to current project
 #export src=$pkmn_src
@@ -54,7 +55,7 @@ alias rs="rails server"
 alias rgs="rails generate scaffold"
 
 # Notepad++ Aliases
-alias np="run \"$c_drive/Program Files (x86)/Notepad++/notepad++.exe\""
+alias np="run $ide_dir/Notepad++/notepad++.exe"
 alias np-new="np -multiInst -nosession"
 
 # Profile Alias
@@ -123,4 +124,22 @@ function get-pip {
 	curl http://python-distribute.org/distribute_setup.py | python
 	rm distribute-0.6.30.tar.gz
 	curl https://raw.github.com/pypa/pip/master/contrib/get-pip.py | python
+}
+
+# Ruby Functions
+function get-rails {
+	# Install Required packages
+	install make gcc4 sqlite3 libsqlite3_0 libsqlite3-devel
+	
+	# Get Ruby Gems
+	wget http://production.cf.rubygems.org/rubygems/rubygems-1.8.10.tgz
+	tar xvfz rubygems-1.8.10.tgz
+	cd rubygems-1.8.10
+	ruby setup.rb
+	cd ..
+	rm rubygems-1.8.10.tgz
+	rm -rf rubygems-1.8.10
+	
+	# Get Rails
+	gem install rails sqlite3-ruby
 }
