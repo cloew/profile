@@ -1,6 +1,7 @@
 #! /usr/bin/bash
 
 export root_dir="/"
+alias install="sudo apt-get install"
 
 function run() {
 	./"$@"
