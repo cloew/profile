@@ -12,7 +12,7 @@ gpsom
 # Set up core folders
 mkdir $dev_dir
 mkdir $ide_dir
-mdkir $dev_dir/Test
+mdkir $test_dir
 
 # Setup Kao Tessur Folders
 mkdir $kao_dir
