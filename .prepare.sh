@@ -10,7 +10,7 @@ function mkgitdir () {
 }
 
 function get-pip {
-	install curl
+	$1 curl
 	curl http://python-distribute.org/distribute_setup.py | python
 	rm distribute-0.6.30.tar.gz
 	curl https://raw.github.com/pypa/pip/master/contrib/get-pip.py | python
@@ -26,12 +26,14 @@ function get-apt-cyg() {
 case $OSTYPE in
     cygwin )
 		get-apt-cyg
-		alias install="apt-cyg install" ;;
+		install="apt-cyg install" ;;
     linux-gnu )
-		alias install="sudo apt-get install"
-        usermod -a -G adm root
+		install="sudo apt-get install"
+        sudo usermod -a -G adm root
         sudo chgrp adm /home
-        sudo chmod g+w /home ;;
+        sudo chmod g+w /home
+        sudo chgrp -R adm /usr/local
+        sudo chmod -R g+w /usr/local ;;
 esac
 
 # Set Git Default 
@@ -50,7 +52,7 @@ mkdir $test_dir
 mkdir $kao_dir
 
 # Get PIP
-get-pip
+get-pip "$install"
 pip install blessings
 
 # Setup Kao Console
