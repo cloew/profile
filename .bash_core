@@ -61,6 +61,9 @@ alias rgs="rails generate scaffold"
 alias np="run $ide_dir/Notepad++/notepad++.exe"
 alias np-new="np -multiInst -nosession"
 
+# Sublime Text Aliases
+alias st="run $ide_dir/Sublime\ Text\ 2/sublime_text"
+
 # Profile Alias
 alias brc="npm $profile"
 
