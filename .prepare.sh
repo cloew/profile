@@ -10,10 +10,29 @@ function mkgitdir () {
 }
 
 function get-pip {
+	install curl
 	curl http://python-distribute.org/distribute_setup.py | python
 	rm distribute-0.6.30.tar.gz
 	curl https://raw.github.com/pypa/pip/master/contrib/get-pip.py | python
 }
+
+function get-apt-cyg() {
+	wget http://apt-cyg.googlecode.com/svn/trunk/apt-cyg
+	chmod +x apt-cyg
+	mv apt-cyg /usr/local/bin 
+	apt-cyg install unzip
+}
+
+case $OSTYPE in
+    cygwin )
+		get-apt-cyg
+		alias install="apt-cyg install" ;;
+    linux-gnu )
+		alias install="sudo apt-get install"
+        usermod -a -G adm root
+        sudo chgrp adm /home
+        sudo chmod g+w /home ;;
+esac
 
 # Set Git Default 
 git config --global user.name "Chris Loew"
