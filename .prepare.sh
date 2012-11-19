@@ -16,6 +16,9 @@ function get-pip {
 }
 
 # Set Git Default 
+git config --global user.name "Chris Loew"
+git config --global user.email cloew123@gmail.com
+
 cd ~
 git push -u origin master
 
