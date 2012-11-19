@@ -9,6 +9,12 @@ function mkgitdir () {
     git push -u origin master
 }
 
+function get-pip {
+	curl http://python-distribute.org/distribute_setup.py | python
+	rm distribute-0.6.30.tar.gz
+	curl https://raw.github.com/pypa/pip/master/contrib/get-pip.py | python
+}
+
 # Set Git Default 
 cd ~
 git push -u origin master
