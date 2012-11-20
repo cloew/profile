@@ -45,6 +45,7 @@ alias gmv="git mv"
 # Python Aliases
 alias py="python"
 alias m="python main.py"
+alias mu="python -u main.py"
 alias t="python test.py"
 alias py-install="python setup.py install"
 alias mktest="cp $src/Test/testcase_template.py"
