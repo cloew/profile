@@ -2,11 +2,11 @@
 
 case $OSTYPE in
     cygwin )
-		if [ -f ~/.bash_cygwin ]; then
-			source ~/.bash_cygwin
+		if [ -f ~/.bash_sources/.bash_cygwin ]; then
+			source ~/.bash_sources/.bash_cygwin
 		fi ;;
     linux-gnu )
-        if [ -f ~/.bash_linux ]; then
-			source ~/.bash_linux
+        if [ -f ~/.bash_sources/.bash_linux ]; then
+			source ~/.bash_sources/.bash_linux
 		fi ;;
 esac
