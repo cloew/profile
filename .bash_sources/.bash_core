@@ -46,6 +46,7 @@ alias gmv="git mv"
 # Python Aliases
 alias py="python"
 alias m="python main.py"
+alias mu="python -u main.py"
 alias t="python test.py"
 alias py-install="python setup.py install"
 alias mktest="cp $src/Test/testcase_template.py"
@@ -61,6 +62,9 @@ alias rgs="rails generate scaffold"
 # Notepad++ Aliases
 alias np="run $ide_dir/Notepad++/notepad++.exe"
 alias np-new="np -multiInst -nosession"
+
+# Sublime Text Aliases
+alias st="run $ide_dir/Sublime\ Text\ 2/sublime_text"
 
 # Profile Alias
 alias brc="npm $profile"

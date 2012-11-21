@@ -1,46 +1,72 @@
 #! /usr/bin/bash
 
-# Source the Bash Profile
-if [ -f ~/.bashrc ]; then
-	source ~/.bashrc
-fi
+function mkgitdir () {
+    mkdir $1
+    cd $1
+    git init
+    git remote add origin $2
+    git pull origin master
+    git push -u origin master
+}
+
+function get-pip {
+	$1 curl
+	curl http://python-distribute.org/distribute_setup.py | python
+	rm distribute-0.6.30.tar.gz
+	curl https://raw.github.com/pypa/pip/master/contrib/get-pip.py | python
+}
+
+function get-apt-cyg() {
+	wget http://apt-cyg.googlecode.com/svn/trunk/apt-cyg
+	chmod +x apt-cyg
+	mv apt-cyg /usr/local/bin 
+	apt-cyg install unzip
+}
+
+case $OSTYPE in
+    cygwin )
+		get-apt-cyg
+		install="apt-cyg install" ;;
+    linux-gnu )
+		install="sudo apt-get install"
+        sudo usermod -a -G adm root
+        sudo chgrp adm /home
+        sudo chmod g+w /home
+        sudo chgrp -R adm /usr/local
+        sudo chmod -R g+w /usr/local ;;
+esac
 
 # Set Git Default 
+git config --global user.name "Chris Loew"
+git config --global user.email cloew123@gmail.com
+
 cd ~
-gpsom
+git push -u origin master
 
 # Set up core folders
 mkdir $dev_dir
 mkdir $ide_dir
-mdkir $test_dir
+mkdir $test_dir
 
 # Setup Kao Tessur Folders
 mkdir $kao_dir
 
 # Get PIP
-get-pip
+get-pip "$install"
 pip install blessings
 
 # Setup Kao Console
-mkdir $kao_console_dir
-cd $kao_console_dir
-g-start git@github.com:cloew/KaoConsole.git
-py-install # Install the Kao Console
+mkgitdir $kao_console_dir git@github.com:cloew/KaoConsole.git
+python setup.py install # Install the Kao Console
 
 # Setup Nyt Owl
-mkdir $nytowl_dir
-cd $nytowl_dir
-g-start git@github.com:cloew/Nyt-Owl-Editor.git
+mkgitdir $nytowl_dir git@github.com:cloew/Nyt-Owl-Editor.git
 
 # Setup Pokemon Python
-mkdir $pkmn_dir
-cd $pkmn_dir
-g-start git@github.com:cloew/Pokemon-Project.git
+mkgitdir $pkmn_dir git@github.com:cloew/Pokemon-Project.git
 
 # Setup Excelcient Directories
 mkdir $exc_dir
 
 # Setup Prosperion
-mkdir $prosp_dir
-cd $prosp_dir
-g-start git@github.com:cloew/Project001.git
+mkgitdir $prosp_dir git@github.com:cloew/Project001.git

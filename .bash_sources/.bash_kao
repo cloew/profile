@@ -26,7 +26,7 @@ export rant_dir=$kao_dir/Rants
 alias akao="cd $kao_dir"
 
 # Nyt Owl Commands
-alias note="python $nytowl_src/main.py"
+alias note="python -u $nytowl_src/main.py"
 alias a-nytowl="cd $nytowl_src"
 alias s-nytowl="nytowl; start"
 alias rant="cd $rant_dir; note"
