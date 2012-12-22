@@ -17,6 +17,7 @@ export cb=""
 # Aliases
 
 # Core Aliases
+alias ahome="cd ~"
 alias adev="cd $dev_dir"
 alias aIDEs="cd $ide_dir"
 alias atest="cd $test_dir"
