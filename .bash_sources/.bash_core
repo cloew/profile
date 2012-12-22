@@ -41,6 +41,7 @@ alias gplcb="git pull origin $cb"
 alias gs="git status"
 alias grm="git rm"
 alias gmv="git mv"
+alias gdf="git diff"
 
 # Python Aliases
 alias py="python"
