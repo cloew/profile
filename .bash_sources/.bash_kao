@@ -6,6 +6,9 @@ export kao_dir="$dev_dir/KaoTessur"
 # Kao Console paths
 export kao_console_dir=$kao_dir/KaoConsole
 
+# LOL Code Parser Paths
+export lol_code_parser_dir=$kao_dir/LOLCodeParser
+
 # Nyt Owl paths
 export nytowl_dir=$kao_dir/NytOwlTextEditor
 export nytowl_src=$nytowl_dir/src
@@ -24,6 +27,9 @@ export rant_dir=$kao_dir/Rants
 
 # Kao Tessur Commands
 alias akao="cd $kao_dir"
+
+# LOL Code Commands
+alias a-lolcode="cd $lol_code_parser_dir"
 
 # Nyt Owl Commands
 alias note="python -u $nytowl_src/main.py"
