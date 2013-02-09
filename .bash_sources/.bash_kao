@@ -24,6 +24,8 @@ export pymine_src=$kao_dir/PyMine/src
 
 # Rant dir
 export rant_dir=$kao_dir/Rants
+export avatar_rant_dir=$rant_dir/Avatar
+export YJ_rant_dir=$rant_dir/Young_Justice
 
 # Kao Tessur Commands
 alias akao="cd $kao_dir"
@@ -36,6 +38,8 @@ alias note="python -u $nytowl_src/main.py"
 alias a-nytowl="cd $nytowl_src"
 alias s-nytowl="nytowl; start"
 alias rant="cd $rant_dir; note"
+alias avatar-rant="cd $avatar_rant_dir; note"
+alias yj-rant="cd $YJ_rant_dir; note"
 
 # Pkmn Commands
 alias a-pkmn="cd $pkmn_src"
