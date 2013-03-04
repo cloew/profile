@@ -13,6 +13,10 @@ export lol_code_parser_dir=$kao_dir/LOLCodeParser
 export nytowl_dir=$kao_dir/NytOwlTextEditor
 export nytowl_src=$nytowl_dir/src
 
+# Personal Accounting Software paths
+export personal_accounting_dir=$kao_dir/PersonalAccountingSoftware
+export personal_accounting_src=$personal_accounting_dir/src
+
 # Pokemon paths
 export pkmn_dir=$kao_dir/PokemonPython
 export pkmn_src=$pkmn_dir/src
@@ -40,6 +44,9 @@ alias s-nytowl="nytowl; start"
 alias rant="cd $rant_dir; note"
 alias avatar-rant="cd $avatar_rant_dir; note"
 alias yj-rant="cd $YJ_rant_dir; note"
+
+# Personal Accounting Commands
+alias a-pas="cd $personal_accounting_src"
 
 # Pkmn Commands
 alias a-pkmn="cd $pkmn_src"
