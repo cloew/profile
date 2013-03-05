@@ -23,6 +23,10 @@ export pkmn_src=$pkmn_dir/src
 export pkmn_test=$pkmn_src/test.py\ $pkmn_src/Test/test_helper.py
 export pkmn_rsrc=$pkmn_src/resources/trainerdex.xml\ $pkmn_src/resources/attackdex.xml\ $pkmn_src/resources/pokedex.xml\ $pkmn_src/resources/abilitydex.xml\ $pkmn_src/resources/tags.py
 
+# Programmer's Best Friend paths
+export pbf_dir=$kao_dir/ProgrammersBestFriend
+export pbf_src=$pbf_dir/src
+
 # PyMine paths
 export pymine_src=$kao_dir/PyMine/src
 
@@ -54,6 +58,9 @@ alias s-pkmn="pkmn; start"
 alias db="python dbtest.py"
 alias aac="python pkmn_db_front.py ADD ATTACK"
 alias mkeffect="bash $poke_src/scripts/mkeffect.sh"
+
+# PBF Commands
+alias a-pbf="cd $pbf_src"
 
 # PyMine Commands
 alias a-pymine="cd $pymine_src"
