@@ -93,6 +93,15 @@ function start() {
 }
 
 # Git Helpers
+function g-new() {
+    gi
+    grao $1
+    touch README
+    ga README
+    gcm 'Adding README file'
+    gps -u origin master
+}
+
 function g-start() {
     gi
     grao $1
