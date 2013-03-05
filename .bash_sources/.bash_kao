@@ -61,6 +61,7 @@ alias mkeffect="bash $poke_src/scripts/mkeffect.sh"
 
 # PBF Commands
 alias a-pbf="cd $pbf_src"
+alias pbf="python $pbf_Src/main.py"
 
 # PyMine Commands
 alias a-pymine="cd $pymine_src"
