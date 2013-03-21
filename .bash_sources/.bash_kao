@@ -3,6 +3,9 @@
 # Kao Tessur Paths
 export kao_dir="$dev_dir/KaoTessur"
 
+# Galaga Paths
+export galaga_dir=$kao_dir/GalagaEsque
+
 # Kao Console paths
 export kao_console_dir=$kao_dir/KaoConsole
 
@@ -37,6 +40,9 @@ export YJ_rant_dir=$rant_dir/Young_Justice
 
 # Kao Tessur Commands
 alias akao="cd $kao_dir"
+
+# Galaga Commands
+alias a-galaga="cd $galaga_dir"
 
 # LOL Code Commands
 alias a-lolcode="cd $lol_code_parser_dir"
