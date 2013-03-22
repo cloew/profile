@@ -4,6 +4,9 @@ export dev_dir="$root_dir/dev"
 export ide_dir="$root_dir/IDEs"
 export test_dir="$dev_dir/Test"
 
+export wruby_dir="$c_drive/Ruby193"
+export wruby_bin_dir="$wruby_dir/bin"
+
 # Paths to current project
 #export src=$pkmn_src
 #export test=$pkmn_test
@@ -58,6 +61,12 @@ alias wpip="$c_drive/Python27/Scripts/pip.exe"
 alias wm="wpy main.py"
 alias wt="wpy test.py"
 
+# Ruby Aliases
+alias wruby="$wruby_bin_dir/ruby.exe"
+alias wgem="$wruby_bin_dir/gem.bat"
+alias wbundle="$wruby_bin_dir/bundle.bat"
+alias wrails="$wruby_bin_dir/rails.bat"
+alias wrake="$wruby_bin_dir/rake.bat"
 # Rails Aliases
 alias rs="rails server"
 alias rgs="rails generate scaffold"
