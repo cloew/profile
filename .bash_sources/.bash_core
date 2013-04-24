@@ -59,7 +59,9 @@ alias mktest="cp $src/Test/testcase_template.py"
 alias wpy="$c_drive/Python27/python.exe"
 alias wpip="$c_drive/Python27/Scripts/pip.exe"
 alias wm="wpy main.py"
+alias wmu="wpy -u main.py"
 alias wt="wpy test.py"
+alias wpy-install="wpy setup.py install"
 
 # Ruby Aliases
 alias wruby="$wruby_bin_dir/ruby.exe"
