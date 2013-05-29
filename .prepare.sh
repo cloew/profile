@@ -69,4 +69,4 @@ mkgitdir $pkmn_dir git@github.com:cloew/Pokemon-Project.git
 mkdir $exc_dir
 
 # Setup Prosperion
-mkgitdir $prosp_dir git@github.com:cloew/Project001.git
+mkgitdir $prosp_dir git@github.com:ExcelcientLLC/Project001.git
