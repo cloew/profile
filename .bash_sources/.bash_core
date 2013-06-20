@@ -48,6 +48,10 @@ alias grm="git rm"
 alias gmv="git mv"
 alias gdf="git diff"
 
+# Lobster Aliases
+alias lobster="$dev_dir/lib/lobster/lobster/lobster.exe"
+alias lob="lobster"
+
 # Python Aliases
 alias py="python"
 alias m="python main.py"
