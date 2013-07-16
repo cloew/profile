@@ -125,6 +125,12 @@ function g-start() {
     gps -u origin master
 }
 
+function gnb() {
+    gb $1
+    gch $1
+    gps -u origin $1
+}
+
 # Notepad Functions
 function npm() {
     np -multiInst &
