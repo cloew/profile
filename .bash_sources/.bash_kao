@@ -9,6 +9,9 @@ export galaga_dir=$kao_dir/GalagaEsque
 # Kao Console paths
 export kao_console_dir=$kao_dir/KaoConsole
 
+# Kao GUI paths
+export kao_gui_dir=$kao_dir/KaoGUI
+
 # LOL Code Parser Paths
 export lol_code_parser_dir=$kao_dir/LOLCodeParser
 
@@ -47,6 +50,9 @@ alias akao="cd $kao_dir"
 
 # Galaga Commands
 alias a-galaga="cd $galaga_dir"
+
+# Kao GUI Commands
+alias a-kaogui="cd $kao_gui_dir"
 
 # LOL Code Commands
 alias a-lolcode="cd $lol_code_parser_dir"
