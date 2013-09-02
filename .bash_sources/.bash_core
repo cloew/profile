@@ -66,6 +66,8 @@ alias wm="wpy main.py"
 alias wmu="wpy -u main.py"
 alias wt="wpy test.py"
 alias wpy-install="wpy setup.py install"
+# Django Aliases
+alias djr="py manage.py runserver"
 
 # Ruby Aliases
 alias wruby="$wruby_bin_dir/ruby.exe"
