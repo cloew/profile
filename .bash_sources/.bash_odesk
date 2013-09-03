@@ -1,0 +1,7 @@
+#! /usr/bin/bash
+
+# Kao Tessur Paths
+export odesk_dir="$dev_dir/oDesk"
+
+# Prosperion Aliases
+alias aodesk="cd $odesk_dir"
