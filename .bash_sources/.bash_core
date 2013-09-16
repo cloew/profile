@@ -81,6 +81,8 @@ alias wrake="$wruby_bin_dir/rake.bat"
 # Rails Aliases
 alias rs="rails server"
 alias rgs="rails generate scaffold"
+alias re-dev="RAILS_ENV=development"
+alias re-prod="RAILS_ENV=production"
 
 # Notepad++ Aliases
 alias np="run $ide_dir/Notepad++/notepad++.exe"
