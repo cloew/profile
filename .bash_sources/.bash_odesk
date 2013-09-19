@@ -1,7 +1,9 @@
 #! /usr/bin/bash
 
-# Kao Tessur Paths
+# oDesk Paths
 export odesk_dir="$dev_dir/oDesk"
+export lead_server_dir="$odesk_dir/LeadServer"
 
-# Prosperion Aliases
+# oDesk Aliases
 alias aodesk="cd $odesk_dir"
+alias a-leadserver="cd $lead_server_dir/lead_application"
