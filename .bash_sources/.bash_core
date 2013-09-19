@@ -71,6 +71,9 @@ alias dj-manage="py manage.py"
 alias djr="dj-manage runserver"
 alias dj-syncdb="dj-manage syncdb"
 alias dj-app="dj-manage startapp"
+# Django-NonRel Aliases
+alias dj-collectstatic="dj-manage collectstatic"
+alias dj-deploy="dj-manage deploy"
 
 # Ruby Aliases
 alias wruby="$wruby_bin_dir/ruby.exe"
@@ -136,6 +139,14 @@ function gnb() {
     gb $1
     gch $1
     gps -u origin $1
+}
+
+# Django-NonRel Helpers
+function deploy {
+  cp app.yaml.prod app.yaml
+  echo "yes" | dj-collectstatic
+  echo "no" | dj-deploy
+  cp app.yaml.dev app.yaml
 }
 
 # Notepad Functions
