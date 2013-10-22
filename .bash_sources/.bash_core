@@ -70,6 +70,7 @@ alias wpy-install="wpy setup.py install"
 # Django Aliases
 alias dj-manage="py manage.py"
 alias djr="dj-manage runserver"
+alias dj-shell="dj-manage shell"
 alias dj-syncdb="dj-manage syncdb"
 alias dj-app="dj-manage startapp"
 # Django-NonRel Aliases
