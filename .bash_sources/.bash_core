@@ -26,6 +26,7 @@ alias aIDEs="cd $ide_dir"
 alias atest="cd $test_dir"
 alias re-source="source ~/.bashrc"
 alias q="exit"
+alias start="pbf start project"
 
 # Git Aliases
 alias gi="git init"
@@ -106,19 +107,6 @@ alias ss="sqlitestudio.exe &"
 # Generic Helper Functions
 function asrc() {
     cd $src
-}
-
-function start() {
-    asrc
-    if [ ! -z "$test" ]; then
-        np-test
-    fi
-    sleep 1
-    if [ ! -z "$rsrc" ]; then
-        np-rsrc
-    fi
-    sleep 1
-    npm
 }
 
 # Git Helpers
