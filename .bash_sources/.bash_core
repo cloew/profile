@@ -50,6 +50,17 @@ alias grm="git rm"
 alias gmv="git mv"
 alias gdf="git diff"
 
+# SVN Aliases
+alias ss="svn status"
+alias sa="svn add"
+alias scm="svn commit"
+alias su="svn update"
+alias srm="svn rm"
+alias srv="svn revert"
+alias sdf="svn diff"
+alias smv="svn move"
+alias sch="svn checkout"
+
 # Lobster Aliases
 alias lobster="$dev_dir/lib/lobster/lobster/lobster.exe"
 alias lob="lobster"
@@ -100,9 +111,6 @@ alias st="run $ide_dir/Sublime\ Text\ 2/sublime_text"
 
 # Profile Alias
 alias brc="npm $profile"
-
-# SQLite Alias
-alias ss="sqlitestudio.exe &"
 
 # Generic Helper Functions
 function asrc() {
