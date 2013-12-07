@@ -1,0 +1,7 @@
+#! /usr/bin/bash
+
+# Bluewolf Paths
+export bluewolf_dir="$dev_dir/Bluewolf"
+
+# Bluewolf Commands
+alias abluewolf="cd $bluewolf_dir"

@@ -60,6 +60,7 @@ alias srv="svn revert"
 alias sdf="svn diff"
 alias smv="svn move"
 alias sch="svn checkout"
+alias sls="svn ls"
 
 # Lobster Aliases
 alias lobster="$dev_dir/lib/lobster/lobster/lobster.exe"
