@@ -108,7 +108,7 @@ alias np="run $ide_dir/Notepad++/notepad++.exe"
 alias np-new="np -multiInst -nosession"
 
 # Sublime Text Aliases
-alias st="run $ide_dir/Sublime\ Text\ 2/sublime_text"
+alias st="run $ide_dir/Sublime/sublime_text.exe"
 
 # Profile Alias
 alias brc="npm $profile"
