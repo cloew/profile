@@ -2,6 +2,8 @@
 
 # Bluewolf Paths
 export bluewolf_dir="$dev_dir/Bluewolf"
+export bluewolf_svn_path="https://pl5.projectlocker.com/bluewolf/codeblue/svn"
+
 
 # Bluewolf Commands
 alias abluewolf="cd $bluewolf_dir"
