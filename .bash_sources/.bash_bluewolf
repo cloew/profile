@@ -7,3 +7,7 @@ export bluewolf_svn_path="https://pl5.projectlocker.com/bluewolf/codeblue/svn"
 
 # Bluewolf Commands
 alias abluewolf="cd $bluewolf_dir"
+alias a-pearson="cd $bluewolf_dir/Pearson"
+alias a-prologis="cd $bluewolf_dir/Prologis"
+alias a-standard="cd $bluewolf_dir/Standard"
+alias a-vistar="cd $bluewolf_dir/Vistar"
