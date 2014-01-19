@@ -35,7 +35,7 @@ export pkmn_rsrc=$pkmn_src/resources/trainerdex.xml\ $pkmn_src/resources/attackd
 
 # Programmer's Best Friend paths
 export pbf_dir=$kao_dir/ProgrammersBestFriend
-export pbf_src=$pbf_dir/src
+export pbf_src=$pbf_dir/pbf
 
 # PyMine paths
 export pymine_src=$kao_dir/PyMine/src
@@ -80,7 +80,7 @@ alias mkeffect="bash $poke_src/scripts/mkeffect.sh"
 
 # PBF Commands
 alias a-pbf="cd $pbf_src"
-alias pbf="python $pbf_src/main.py"
+alias pbf-dev="python $pbf_dir/main.py"
 
 # PyMine Commands
 alias a-pymine="cd $pymine_src"
