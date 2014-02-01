@@ -141,6 +141,12 @@ function gnb() {
     gps -u origin $1
 }
 
+# SVN Helpers
+function scm-shells() {
+    sa $@
+    scm $@ -m "shells"
+}
+
 # Django-NonRel Helpers
 function deploy {
   cp app.yaml.prod app.yaml
