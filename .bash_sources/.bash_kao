@@ -2,15 +2,18 @@
 
 # Kao Tessur Paths
 export kao_dir="$dev_dir/KaoTessur"
+export kao_games_dir="$kao_dir/Games"
+export kao_lib_dir="$kao_dir/Libraries"
+export kao_pbf_dir="$kao_lib_dir/PBF"
 
 # Galaga Paths
-export galaga_dir=$kao_dir/GalagaEsque
+export galaga_dir=$kao_games_dir/GalagaEsque
 
 # Kao Console paths
-export kao_console_dir=$kao_dir/KaoConsole
+export kao_console_dir=$kao_lib_dir/KaoConsole
 
 # Kao GUI paths
-export kao_gui_dir=$kao_dir/KaoGUI
+export kao_gui_dir=$kao_lib_dir/KaoGUI
 
 # LOL Code Parser Paths
 export lol_code_parser_dir=$kao_dir/LOLCodeParser
@@ -20,7 +23,7 @@ export nytowl_dir=$kao_dir/NytOwlTextEditor
 export nytowl_src=$nytowl_dir/src
 
 # Pandemic Paths
-export pandemic_dir=$kao_dir/Pandemic
+export pandemic_dir=$kao_games_dir/Pandemic
 export pandemic_src=$pandemic_dir/src
 
 # Personal Accounting Software paths
@@ -28,17 +31,17 @@ export personal_accounting_dir=$kao_dir/PersonalAccountingSoftware
 export personal_accounting_src=$personal_accounting_dir/src
 
 # Pokemon paths
-export pkmn_dir=$kao_dir/PokemonPython
+export pkmn_dir=$kao_games_dir/PokemonPython
 export pkmn_src=$pkmn_dir/src
 export pkmn_test=$pkmn_src/test.py\ $pkmn_src/Test/test_helper.py
 export pkmn_rsrc=$pkmn_src/resources/trainerdex.xml\ $pkmn_src/resources/attackdex.xml\ $pkmn_src/resources/pokedex.xml\ $pkmn_src/resources/abilitydex.xml\ $pkmn_src/resources/tags.py
 
 # Programmer's Best Friend paths
-export pbf_dir=$kao_dir/ProgrammersBestFriend
+export pbf_dir=$kao_pbf_dir/ProgrammersBestFriend
 export pbf_src=$pbf_dir/pbf
 
 # PyMine paths
-export pymine_src=$kao_dir/PyMine/src
+export pymine_src=$kao_games_dir/PyMine/src
 
 # Rant dir
 export rant_dir=$kao_dir/Rants
@@ -79,7 +82,7 @@ alias aac="python pkmn_db_front.py ADD ATTACK"
 alias mkeffect="bash $poke_src/scripts/mkeffect.sh"
 
 # PBF Commands
-alias a-pbf="cd $pbf_src"
+alias a-pbf="cd $pbf_dir"
 alias pbf-dev="python $pbf_dir/main.py"
 
 # PyMine Commands

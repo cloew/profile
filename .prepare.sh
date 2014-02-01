@@ -50,6 +50,9 @@ mkdir $test_dir
 
 # Setup Kao Tessur Folders
 mkdir $kao_dir
+mkdir $kao_games_dir
+mkdir $kao_lib_dir
+mkdir $kao_pbf_dir
 
 # Get PIP
 get-pip "$install"
@@ -58,6 +61,10 @@ pip install blessings
 # Setup Kao Console
 mkgitdir $kao_console_dir git@github.com:cloew/KaoConsole.git
 python setup.py install # Install the Kao Console
+
+# Setup PBF
+mkgitdir $pbf_dir git@github.com:cloew/ProgrammersBestFriend.git
+python setup.py install # Install PBF
 
 # Setup Nyt Owl
 mkgitdir $nytowl_dir git@github.com:cloew/Nyt-Owl-Editor.git
