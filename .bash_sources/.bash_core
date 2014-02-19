@@ -146,6 +146,11 @@ function gnb() {
     gps -u origin $1
 }
 
+function grm-py() {
+    grm $1
+    rm  $1c
+}
+
 # SVN Helpers
 function scm-shells() {
     sa $@
