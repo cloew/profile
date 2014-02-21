@@ -146,6 +146,11 @@ function gnb() {
     gps -u origin $1
 }
 
+function gmv-py() {
+    gmv $1 $2
+    rm  $1c
+}
+
 function grm-py() {
     grm $1
     rm  $1c
