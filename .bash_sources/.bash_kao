@@ -15,6 +15,9 @@ export kao_console_dir=$kao_lib_dir/KaoConsole
 # Kao GUI paths
 export kao_gui_dir=$kao_lib_dir/KaoGUI
 
+# Kao Runner paths
+export kao_runner_dir=$kao_lib_dir/KaoPyRunner
+
 # LOL Code Parser Paths
 export lol_code_parser_dir=$kao_dir/LOLCodeParser
 
@@ -42,6 +45,7 @@ export pbf_src=$pbf_dir/pbf
 
 # PyMine paths
 export pymine_src=$kao_games_dir/PyMine/src
+export pymine2_src=$kao_games_dir/PyMine2/src
 
 # Rant dir
 export rant_dir=$kao_dir/Rants
@@ -56,6 +60,9 @@ alias a-galaga="cd $galaga_dir"
 
 # Kao GUI Commands
 alias a-kaogui="cd $kao_gui_dir"
+
+# Kao GUI Commands
+alias a-runner="cd $kao_runner_dir"
 
 # LOL Code Commands
 alias a-lolcode="cd $lol_code_parser_dir"
@@ -87,6 +94,7 @@ alias pbf-dev="python $pbf_dir/main.py"
 
 # PyMine Commands
 alias a-pymine="cd $pymine_src"
+alias a-pymine2="cd $pymine2_src"
 alias s-pymine="pymine; start"
 
 # Project Functions
