@@ -177,7 +177,7 @@ function deploy {
 }
 
 # Notepad Functions
-function npm() {
+function np-multi() {
     np -multiInst &
 }
 
