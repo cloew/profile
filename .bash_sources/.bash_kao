@@ -6,6 +6,10 @@ export kao_games_dir="$kao_dir/Games"
 export kao_lib_dir="$kao_dir/Libraries"
 export kao_pbf_dir="$kao_lib_dir/PBF"
 
+# Toggl Settings
+export toggl_personal_ws="Personal Projects"
+export toggl_experimentation_ws="Experimentation"
+
 # Galaga Paths
 export galaga_dir=$kao_games_dir/GalagaEsque
 
