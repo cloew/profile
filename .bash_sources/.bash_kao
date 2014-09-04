@@ -58,6 +58,8 @@ export YJ_rant_dir=$rant_dir/Young_Justice
 
 # Kao Tessur Commands
 alias akao="cd $kao_dir"
+alias akaogames="cd $kao_games_dir"
+alias akaolib="cd $kao_lib_dir"
 
 # Galaga Commands
 alias a-galaga="cd $galaga_dir"
