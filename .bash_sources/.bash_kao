@@ -10,6 +10,10 @@ export kao_pbf_dir="$kao_lib_dir/PBF"
 export toggl_personal_ws="Personal Projects"
 export toggl_experimentation_ws="Experimentation"
 
+# Deck Building Paths
+export deck_building_dir=$kao_games_dir/DeckBuilding
+export deck_building_src=$deck_building_dir/src
+
 # Galaga Paths
 export galaga_dir=$kao_games_dir/GalagaEsque
 
@@ -60,6 +64,9 @@ export YJ_rant_dir=$rant_dir/Young_Justice
 alias akao="cd $kao_dir"
 alias akaogames="cd $kao_games_dir"
 alias akaolib="cd $kao_lib_dir"
+
+# Deck building Commands
+alias a-deckbuilding="cd $deck_building_src"
 
 # Galaga Commands
 alias a-galaga="cd $galaga_dir"
