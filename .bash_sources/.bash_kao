@@ -67,6 +67,8 @@ alias akaolib="cd $kao_lib_dir"
 
 # Deck building Commands
 alias a-deckbuilding="cd $deck_building_src"
+alias db-startgame='curl -i -H "Content-Type: application/json" -X POST http://127.0.0.1:5000/api/startgame'
+alias db-play='curl -i -H "Content-Type: application/json" -X POST -d '"'"'{"index":0}'"'"' http://127.0.0.1:5000/api/game/1/play'
 
 # Galaga Commands
 alias a-galaga="cd $galaga_dir"
