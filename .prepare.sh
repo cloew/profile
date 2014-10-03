@@ -9,6 +9,12 @@ function mkgitdir () {
     git push -u origin master
 }
 
+function mkgitdirAndInstall () {
+    mkgitdir $1 $2
+    cd src/
+    python setup.py install
+}
+
 function get-pip {
 	$1 curl
 	curl http://python-distribute.org/distribute_setup.py | python
@@ -57,14 +63,44 @@ mkdir $kao_pbf_dir
 # Get PIP
 get-pip "$install"
 pip install blessings
+pip install flask
+pip install requests
 
 # Setup Kao Console
-mkgitdir $kao_console_dir git@github.com:cloew/KaoConsole.git
-python setup.py install # Install the Kao Console
+mkgitdirAndInstall $kao_console_dir git@github.com:cloew/KaoConsole.git
+
+# Setup Kao Deck
+mkgitdirAndInstall $kao_deck_dir git@github.com:cloew/KaoDeck.git
+
+# Setup Kao Factory
+mkgitdirAndInstall $kao_factory_dir git@github.com:cloew/KaoFactory.git
+
+# Setup Kao Flask
+mkgitdirAndInstall $kao_flask_dir git@github.com:cloew/KaoFlask.git
+
+# Setup Kao Flask
+mkgitdirAndInstall $kao_gui_dir git@github.com:cloew/KaoGUI.git
 
 # Setup PBF
-mkgitdir $pbf_dir git@github.com:cloew/ProgrammersBestFriend.git
-python setup.py install # Install PBF
+mkgitdirAndInstall $pbf_dir git@github.com:cloew/ProgrammersBestFriend.git
+
+# Setup DevTools PBF
+mkgitdirAndInstall $devtools_pbf_dir git@github.com:cloew/DevToolsPBF.git
+
+# Setup KaoGUI PBF
+mkgitdirAndInstall $kaogui_pbf_dir git@github.com:cloew/KaoGUIPBF.git
+
+# Setup Toggl PBF
+mkgitdirAndInstall $toggl_pbf_dir git@github.com:cloew/TogglPBF.git
+
+# Setup Unittest PBF
+mkgitdirAndInstall $unittest_pbf_dir git@github.com:cloew/UnittestPBF.git
+
+# Setup pytoggl
+mkgitdirAndInstall $pytoggl_dir git@github.com:cloew/pytoggl.git
+
+# Setup Deck Building
+mkgitdir $deck_building_dir git@github.com:cloew/DeckBuilding.git
 
 # Setup Nyt Owl
 mkgitdir $nytowl_dir git@github.com:cloew/Nyt-Owl-Editor.git
