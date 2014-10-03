@@ -20,6 +20,15 @@ export galaga_dir=$kao_games_dir/GalagaEsque
 # Kao Console paths
 export kao_console_dir=$kao_lib_dir/KaoConsole
 
+# Kao Deck paths
+export kao_deck_dir=$kao_lib_dir/KaoDeck
+
+# Kao Factory paths
+export kao_factory_dir=$kao_lib_dir/KaoFactory
+
+# Kao Flask paths
+export kao_flask_dir=$kao_lib_dir/KaoFlask
+
 # Kao GUI paths
 export kao_gui_dir=$kao_lib_dir/KaoGUI
 
@@ -47,9 +56,24 @@ export pkmn_src=$pkmn_dir/src
 export pkmn_test=$pkmn_src/test.py\ $pkmn_src/Test/test_helper.py
 export pkmn_rsrc=$pkmn_src/resources/trainerdex.xml\ $pkmn_src/resources/attackdex.xml\ $pkmn_src/resources/pokedex.xml\ $pkmn_src/resources/abilitydex.xml\ $pkmn_src/resources/tags.py
 
+# pytoggl paths
+export pytoggl_dir=$kao_lib_dir/pytoggl
+
 # Programmer's Best Friend paths
 export pbf_dir=$kao_pbf_dir/ProgrammersBestFriend
 export pbf_src=$pbf_dir/pbf
+
+# Dev Tools PBF paths
+export devtools_pbf_dir=$kao_pbf_dir/DevToolsPBF
+
+# Kao GUI PBF paths
+export kaogui_pbf_dir=$kao_pbf_dir/KaoGUIPBF
+
+# Toggl PBF paths
+export toggl_pbf_dir=$kao_pbf_dir/TogglPBF
+
+# Unittest PBF paths
+export unittest_pbf_dir=$kao_pbf_dir/UnittestPBF
 
 # PyMine paths
 export pymine_src=$kao_games_dir/PyMine/src
