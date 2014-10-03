@@ -67,8 +67,18 @@ alias akaolib="cd $kao_lib_dir"
 
 # Deck building Commands
 alias a-deckbuilding="cd $deck_building_src"
-alias db-startgame='curl -i -H "Content-Type: application/json" -X POST http://127.0.0.1:5000/api/startgame'
-alias db-play='curl -i -H "Content-Type: application/json" -X POST -d '"'"'{"index":0}'"'"' http://127.0.0.1:5000/api/game/1/play'
+alias db-newlobby='curl -i -H "Content-Type: application/json" -X POST http://127.0.0.1:5000/api/lobbies'
+alias db-getlobby='curl -i http://127.0.0.1:5000/api/lobbies/1'
+alias db-joinlobby='curl -i -H "Content-Type: application/json" -X POST http://127.0.0.1:5000/api/lobbies/1/join'
+alias db-startlobby='curl -i -H "Content-Type: application/json" -X POST http://127.0.0.1:5000/api/lobbies/1/start'
+alias db-changechar='curl -i -H "Content-Type: application/json" -X POST -d '"'"'{"character":"Aquaman"}'"'"' http://127.0.0.1:5000/api/lobbies/1/player/1/changecharacter'
+alias db-startgame='db-newlobby;db-changechar;db-startlobby'
+alias db-getgame='curl -i http://127.0.0.1:5000/api/game/1/player/1'
+alias db-play='curl -i -H "Content-Type: application/json" -X POST -d '"'"'{"index":0}'"'"' http://127.0.0.1:5000/api/game/1/player/1/play'
+alias db-defend='curl -i -H "Content-Type: application/json" -X POST -d '"'"'{"defending":true, "index":0}'"'"' http://127.0.0.1:5000/api/game/1/player/1/defend'
+alias db-nodefend='curl -i -H "Content-Type: application/json" -X POST -d '"'"'{"defending":false}'"'"' http://127.0.0.1:5000/api/game/1/player/1/defend'
+alias db-activate='curl -i -H "Content-Type: application/json" -X POST -d '"'"'{"index":0, "source":"ONGOING"}'"'"' http://127.0.0.1:5000/api/game/1/player/1/activate'
+alias db-endturn='curl -i -H "Content-Type: application/json" -X POST http://127.0.0.1:5000/api/game/1/player/1/endturn'
 
 # Galaga Commands
 alias a-galaga="cd $galaga_dir"
