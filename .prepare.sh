@@ -1,5 +1,7 @@
 #! /usr/bin/bash
 
+source ~/.bashrc
+
 function get-apt-cyg() {
 	wget http://apt-cyg.googlecode.com/svn/trunk/apt-cyg
 	chmod +x apt-cyg
