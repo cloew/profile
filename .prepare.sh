@@ -1,20 +1,5 @@
 #! /usr/bin/bash
 
-function mkgitdir () {
-    mkdir $1
-    cd $1
-    git init
-    git remote add origin $2
-    git pull origin master
-    git push -u origin master
-}
-
-function mkgitdirAndInstall () {
-    mkgitdir $1 $2
-    cd src/
-    python setup.py install
-}
-
 function get-apt-cyg() {
 	wget http://apt-cyg.googlecode.com/svn/trunk/apt-cyg
 	chmod +x apt-cyg

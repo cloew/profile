@@ -162,6 +162,18 @@ function grm-py() {
     rm  $1c
 }
 
+function mkgitdir () {
+    mkdir $1
+    cd $1
+    g-start $2
+}
+
+function mkgitdirAndInstall () {
+    mkgitdir $1 $2
+    cd src/
+    py-install
+}
+
 # SVN Helpers
 function scm-shells() {
     sa $@
