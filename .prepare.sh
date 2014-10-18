@@ -1,26 +1,6 @@
 #! /usr/bin/bash
 
-function mkgitdir () {
-    mkdir $1
-    cd $1
-    git init
-    git remote add origin $2
-    git pull origin master
-    git push -u origin master
-}
-
-function mkgitdirAndInstall () {
-    mkgitdir $1 $2
-    cd src/
-    python setup.py install
-}
-
-function get-pip {
-	$1 curl
-	curl http://python-distribute.org/distribute_setup.py | python
-	rm distribute-0.6.30.tar.gz
-	curl https://raw.github.com/pypa/pip/master/contrib/get-pip.py | python
-}
+source ~/.bashrc
 
 function get-apt-cyg() {
 	wget http://apt-cyg.googlecode.com/svn/trunk/apt-cyg
@@ -61,6 +41,7 @@ mkdir $kao_lib_dir
 mkdir $kao_pbf_dir
 
 # Get PIP
+$install curl
 get-pip "$install"
 pip install blessings
 pip install flask

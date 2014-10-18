@@ -171,6 +171,18 @@ function grm-py() {
     rm  $1c
 }
 
+function mkgitdir () {
+    mkdir $1
+    cd $1
+    g-start $2
+}
+
+function mkgitdirAndInstall () {
+    mkgitdir $1 $2
+    cd src/
+    py-install
+}
+
 # SVN Helpers
 function scm-shells() {
     sa $@
@@ -216,6 +228,11 @@ function mktestdir() {
 }
 
 function get-pip {
+    python="$1"
+    if [ -z "$python" ]
+        then python="python"
+    fi
+    
 	curl http://python-distribute.org/distribute_setup.py | $1
 	rm distribute-0.6.30.tar.gz
 	curl https://raw.github.com/pypa/pip/master/contrib/get-pip.py | $1
