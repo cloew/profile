@@ -143,10 +143,7 @@ function g-start() {
 function mkgitdir () {
     mkdir $1
     cd $1
-    git init
-    git remote add origin $2
-    git pull origin master
-    git push -u origin master
+    g-start $2
 }
 
 function gnb() {
