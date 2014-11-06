@@ -144,6 +144,12 @@ function g-start() {
     gps -u origin master
 }
 
+function mkgitdir () {
+    mkdir $1
+    cd $1
+    g-start $2
+}
+
 function gnb() {
     gb $1
     gch $1
