@@ -38,6 +38,10 @@ export kao_runner_dir=$kao_lib_dir/KaoPyRunner
 # LOL Code Parser Paths
 export lol_code_parser_dir=$kao_dir/LOLCodeParser
 
+# Nytran paths
+export nytram_dir=$kao_lib_dir/Nytram
+export nytram_src=$nytram_dir/src
+
 # Nyt Owl paths
 export nytowl_dir=$kao_dir/NytOwlTextEditor
 export nytowl_src=$nytowl_dir/src
@@ -95,7 +99,7 @@ alias db-newlobby='curl -i -H "Content-Type: application/json" -X POST http://12
 alias db-getlobby='curl -i http://127.0.0.1:5000/api/lobbies/1'
 alias db-joinlobby='curl -i -H "Content-Type: application/json" -X POST http://127.0.0.1:5000/api/lobbies/1/join'
 alias db-startlobby='curl -i -H "Content-Type: application/json" -X POST http://127.0.0.1:5000/api/lobbies/1/start'
-alias db-changechar='curl -i -H "Content-Type: application/json" -X POST -d '"'"'{"character":"Aquaman"}'"'"' http://127.0.0.1:5000/api/lobbies/1/player/1/changecharacter'
+alias db-changechar='curl -i -H "Content-Type: application/json" -X POST -d '"'"'{"character":"The Flash"}'"'"' http://127.0.0.1:5000/api/lobbies/1/player/1/changecharacter'
 alias db-startgame='db-newlobby;db-changechar;db-startlobby'
 alias db-getgame='curl -i http://127.0.0.1:5000/api/game/1/player/1'
 alias db-play='curl -i -H "Content-Type: application/json" -X POST -d '"'"'{"index":0}'"'"' http://127.0.0.1:5000/api/game/1/player/1/play'
@@ -115,6 +119,9 @@ alias a-runner="cd $kao_runner_dir"
 
 # LOL Code Commands
 alias a-lolcode="cd $lol_code_parser_dir"
+
+# Nyt Owl Commands
+alias a-nytram="cd $nytram_src"
 
 # Nyt Owl Commands
 alias note="python -u $nytowl_src/main.py"
@@ -140,6 +147,8 @@ alias mkeffect="bash $poke_src/scripts/mkeffect.sh"
 # PBF Commands
 alias a-pbf="cd $pbf_dir"
 alias pbf-dev="python $pbf_dir/main.py"
+alias pbf-nt="pbf new test"
+alias pbf-it="pbf insert test"
 
 # PyMine Commands
 alias a-pymine="cd $pymine_src"
