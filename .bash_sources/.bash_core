@@ -7,6 +7,8 @@ export test_dir="$dev_dir/Test"
 export wruby_dir="$c_drive/Ruby193"
 export wruby_bin_dir="$wruby_dir/bin"
 
+export panda_dir="$dev_dir/lib/Panda3D-1.8.1"
+
 # Paths to current project
 #export src=$pkmn_src
 #export test=$pkmn_test
@@ -95,6 +97,8 @@ alias dj-app="dj-manage startapp"
 alias dj-collectstatic-prompt="dj-manage collectstatic"
 alias dj-collectstatic="echo 'yes' | dj-manage collectstatic"
 alias dj-deploy="dj-manage deploy"
+# Panda Aliases
+alias ppy="$panda_dir/python/ppython.exe"
 
 # Ruby Aliases
 alias wruby="$wruby_bin_dir/ruby.exe"
