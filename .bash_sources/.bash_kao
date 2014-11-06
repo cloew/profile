@@ -120,8 +120,9 @@ alias a-runner="cd $kao_runner_dir"
 # LOL Code Commands
 alias a-lolcode="cd $lol_code_parser_dir"
 
-# Nyt Owl Commands
+# Nytram Commands
 alias a-nytram="cd $nytram_src"
+alias s-nytram="a-nytram; cs $nytram_src/cpp/project/Visual\ Studio/Visual\ Studio.sln"
 
 # Nyt Owl Commands
 alias note="python -u $nytowl_src/main.py"
