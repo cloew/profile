@@ -25,9 +25,11 @@ export kao_deck_dir=$kao_lib_dir/KaoDeck
 
 # Kao Factory paths
 export kao_factory_dir=$kao_lib_dir/KaoFactory
+export kao_factory_src=$kao_factory_dir/src
 
 # Kao Flask paths
 export kao_flask_dir=$kao_lib_dir/KaoFlask
+export kao_flask_src=$kao_flask_dir/src
 
 # Kao GUI paths
 export kao_gui_dir=$kao_lib_dir/KaoGUI
@@ -173,4 +175,15 @@ function pymine() {
     src=$pymine_src
     test=""
     rsrc=""
+}
+
+function update-libs() {
+    for lib in $kao_console_dir $kao_deck_dir $kao_factory_src $kao_flask_src $kao_gui_dir $pbf_dir $devtools_pbf_dir $kaogui_pbf_dir $toggl_pbf_dir $unittest_pbf_dir
+    do
+        if [ -d "$lib" ]; then
+            cd $lib;
+            gpl;
+            py-install;
+        fi
+    done
 }
