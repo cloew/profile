@@ -187,3 +187,12 @@ function update-libs() {
         fi
     done
 }
+
+
+
+function pbf-dflt-props() {
+    pbf new pbf-properties .
+    pbf insert pbf-package pbf_python
+    pbf insert pbf-package pbf_unittest
+    pbf insert pbf-package pbf_toggl
+}
