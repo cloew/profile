@@ -116,17 +116,6 @@ function pymine() {
     rsrc=""
 }
 
-function update-libs() {
-    for lib in $kao_console_dir $kao_deck_dir $kao_factory_src $kao_flask_src $kao_gui_dir $pbf_dir $devtools_pbf_dir $kaogui_pbf_dir $toggl_pbf_dir $unittest_pbf_dir
-    do
-        if [ -d "$lib" ]; then
-            cd $lib;
-            gpl;
-            py-install;
-        fi
-    done
-}
-
 function pbf-dflt-props() {
     pbf new pbf-properties .
     pbf insert pbf-package pbf_python
