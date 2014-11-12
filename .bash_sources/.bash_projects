@@ -1,0 +1,11 @@
+function tryToInstallKaoProject() {
+    hash kproj 2>/dev/null || installKaoProject $1
+}
+
+function installKaoProject() {
+    libDir=$1
+    pip install argparse;
+    mkgitdirAndInstall $1/KaoCommand git@github.com:cloew/KaoCommand
+    mkgitdirAndInstall $1/KaoFactory git@github.com:cloew/KaoFactory
+    mkgitdirAndInstall $1/KaoProject git@github.com:cloew/KaoProject
+}

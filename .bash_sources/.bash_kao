@@ -14,39 +14,16 @@ export toggl_experimentation_ws="Experimentation"
 export deck_building_dir=$kao_games_dir/DeckBuilding
 export deck_building_src=$deck_building_dir/src
 
+# Load Projects
+tryToInstallKaoProject $kao_lib_dir
+kproj export ~/.bash_sources/.bash_kao_projects
+source ~/.bash_sources/.bash_kao_projects
+
 # Galaga Paths
 export galaga_dir=$kao_games_dir/GalagaEsque
 
-# Kao Console paths
-export kao_console_dir=$kao_lib_dir/KaoConsole
-
-# Kao Deck paths
-export kao_deck_dir=$kao_lib_dir/KaoDeck
-
-# Kao Factory paths
-export kao_factory_dir=$kao_lib_dir/KaoFactory
-export kao_factory_src=$kao_factory_dir/src
-
-# Kao Flask paths
-export kao_flask_dir=$kao_lib_dir/KaoFlask
-export kao_flask_src=$kao_flask_dir/src
-
-# Kao GUI paths
-export kao_gui_dir=$kao_lib_dir/KaoGUI
-
-# Kao Runner paths
-export kao_runner_dir=$kao_lib_dir/KaoPyRunner
-
 # LOL Code Parser Paths
 export lol_code_parser_dir=$kao_dir/LOLCodeParser
-
-# Nytran paths
-export nytram_dir=$kao_lib_dir/Nytram
-export nytram_src=$nytram_dir/src
-
-# Nyt Owl paths
-export nytowl_dir=$kao_dir/NytOwlTextEditor
-export nytowl_src=$nytowl_dir/src
 
 # Pandemic Paths
 export pandemic_dir=$kao_games_dir/Pandemic
@@ -56,34 +33,8 @@ export pandemic_src=$pandemic_dir/src
 export personal_accounting_dir=$kao_dir/PersonalAccountingSoftware
 export personal_accounting_src=$personal_accounting_dir/src
 
-# Pokemon paths
-export pkmn_dir=$kao_games_dir/PokemonPython
-export pkmn_src=$pkmn_dir/src
-export pkmn_test=$pkmn_src/test.py\ $pkmn_src/Test/test_helper.py
-export pkmn_rsrc=$pkmn_src/resources/trainerdex.xml\ $pkmn_src/resources/attackdex.xml\ $pkmn_src/resources/pokedex.xml\ $pkmn_src/resources/abilitydex.xml\ $pkmn_src/resources/tags.py
-
-# pytoggl paths
-export pytoggl_dir=$kao_lib_dir/pytoggl
-
-# Programmer's Best Friend paths
-export pbf_dir=$kao_pbf_dir/ProgrammersBestFriend
-export pbf_src=$pbf_dir/pbf
-
-# Dev Tools PBF paths
-export devtools_pbf_dir=$kao_pbf_dir/DevToolsPBF
-
-# Kao GUI PBF paths
-export kaogui_pbf_dir=$kao_pbf_dir/KaoGUIPBF
-
-# Toggl PBF paths
-export toggl_pbf_dir=$kao_pbf_dir/TogglPBF
-
-# Unittest PBF paths
-export unittest_pbf_dir=$kao_pbf_dir/UnittestPBF
-
 # PyMine paths
 export pymine_src=$kao_games_dir/PyMine/src
-export pymine2_src=$kao_games_dir/PyMine2/src
 
 # Rant dir
 export rant_dir=$kao_dir/Rants
@@ -96,7 +47,6 @@ alias akaogames="cd $kao_games_dir"
 alias akaolib="cd $kao_lib_dir"
 
 # Deck building Commands
-alias a-deckbuilding="cd $deck_building_src"
 alias db-newlobby='curl -i -H "Content-Type: application/json" -X POST http://127.0.0.1:5000/api/lobbies'
 alias db-getlobby='curl -i http://127.0.0.1:5000/api/lobbies/1'
 alias db-joinlobby='curl -i -H "Content-Type: application/json" -X POST http://127.0.0.1:5000/api/lobbies/1/join'
@@ -113,22 +63,14 @@ alias db-endturn='curl -i -H "Content-Type: application/json" -X POST http://127
 # Galaga Commands
 alias a-galaga="cd $galaga_dir"
 
-# Kao GUI Commands
-alias a-kaogui="cd $kao_gui_dir"
-
-# Kao GUI Commands
-alias a-runner="cd $kao_runner_dir"
-
 # LOL Code Commands
 alias a-lolcode="cd $lol_code_parser_dir"
 
 # Nytram Commands
-alias a-nytram="cd $nytram_src"
 alias s-nytram="a-nytram; cs $nytram_src/cpp/project/Visual\ Studio/Visual\ Studio.sln"
 
 # Nyt Owl Commands
 alias note="python -u $nytowl_src/main.py"
-alias a-nytowl="cd $nytowl_src"
 alias s-nytowl="nytowl; start"
 alias rant="cd $rant_dir; note"
 alias avatar-rant="cd $avatar_rant_dir; note"
@@ -141,21 +83,18 @@ alias a-pan="cd $pandemic_src"
 alias a-pas="cd $personal_accounting_src"
 
 # Pkmn Commands
-alias a-pkmn="cd $pkmn_src"
 alias s-pkmn="pkmn; start"
 alias db="python dbtest.py"
 alias aac="python pkmn_db_front.py ADD ATTACK"
 alias mkeffect="bash $poke_src/scripts/mkeffect.sh"
 
 # PBF Commands
-alias a-pbf="cd $pbf_dir"
 alias pbf-dev="python $pbf_dir/main.py"
 alias pbf-nt="pbf new test"
 alias pbf-it="pbf insert test"
 
 # PyMine Commands
 alias a-pymine="cd $pymine_src"
-alias a-pymine2="cd $pymine2_src"
 alias s-pymine="pymine; start"
 
 # Project Functions

@@ -1,0 +1,164 @@
+[
+{
+    "name":"KaoCommand",
+    "path":{"envVar":"kao_lib_dir",
+               "path":"KaoCommand"},
+    "extensions":[{"type":"GIT",
+                        "url":"git@github.com:cloew/KaoCommand"},
+                       {"type":"PYLIB"}]
+},
+{
+    "name":"KaoConsole",
+    "path":{"envVar":"kao_lib_dir",
+               "path":"KaoConsole"},
+    "extensions":[{"type":"GIT",
+                        "url":"git@github.com:cloew/KaoConsole"},
+                       {"type":"PYLIB"}]
+},
+{
+    "name":"KaoDeck",
+    "path":{"envVar":"kao_lib_dir",
+               "path":"KaoDeck"},
+    "extensions":[{"type":"GIT",
+                        "url":"git@github.com:cloew/KaoDeck"},
+                       {"type":"PYLIB"}]
+},
+{
+    "name":"KaoFactory",
+    "path":{"envVar":"kao_lib_dir",
+               "path":"KaoFactory",
+               "srcPath":"src"},
+    "extensions":[{"type":"GIT",
+                        "url":"git@github.com:cloew/KaoFactory"},
+                       {"type":"PYLIB"}]
+},
+{
+    "name":"KaoFlask",
+    "path":{"envVar":"kao_lib_dir",
+               "path":"KaoFlask",
+               "srcPath":"src"},
+    "extensions":[{"type":"GIT",
+                        "url":"git@github.com:cloew/KaoFlask"},
+                       {"type":"PYLIB"}]
+},
+{
+    "name":"KaoGUI",
+    "path":{"envVar":"kao_lib_dir",
+               "path":"KaoGUI"},
+    "extensions":[{"type":"GIT",
+                        "url":"git@github.com:cloew/KaoGUI"},
+                       {"type":"PYLIB"}]
+},
+{
+    "name":"KaoProject",
+    "path":{"envVar":"kao_lib_dir",
+               "path":"KaoProject"},
+    "extensions":[{"type":"GIT",
+                        "url":"git@github.com:cloew/KaoProject"},
+                       {"type":"PYLIB"}]
+},
+{
+    "name":"KaoPyRunner",
+    "path":{"envVar":"kao_lib_dir",
+               "path":"KaoPyRunner"},
+    "extensions":[{"type":"GIT",
+                        "url":"git@github.com:cloew/KaoPyRunner"},
+                       {"type":"PYLIB"}]
+},
+{
+    "name":"Nytram",
+    "path":{"envVar":"kao_lib_dir",
+               "path":"Nytram"},
+    "extensions":[{"type":"GIT",
+                        "url":"git@github.com:cloew/Nytram"}]
+},
+{
+    "name":"pytoggl",
+    "path":{"envVar":"kao_lib_dir",
+               "path":"pytoggl",
+               "srcPath":"src"},
+    "extensions":[{"type":"GIT",
+                        "url":"git@github.com:cloew/pytoggl"},
+                       {"type":"PYLIB"}]
+},
+{
+    "name":"PBF",
+    "path":{"envVar":"kao_pbf_dir",
+               "path":"ProgrammersBestFriend"},
+    "extensions":[{"type":"GIT",
+                        "url":"git@github.com:cloew/ProgrammersBestFriend"},
+                       {"type":"PYLIB"}]
+},
+{
+    "name":"DevToolsPBF",
+    "path":{"envVar":"kao_pbf_dir",
+               "path":"DevToolsPBF"},
+    "extensions":[{"type":"GIT",
+                        "url":"git@github.com:cloew/DevToolsPBF"},
+                       {"type":"PYLIB"}]
+},
+{
+    "name":"KaoGUIPBF",
+    "path":{"envVar":"kao_pbf_dir",
+               "path":"KaoGUIPBF"},
+    "extensions":[{"type":"GIT",
+                        "url":"git@github.com:cloew/KaoGUIPBF"},
+                       {"type":"PYLIB"}]
+},
+{
+    "name":"PythonPBF",
+    "path":{"envVar":"kao_pbf_dir",
+               "path":"PythonPBF"},
+    "extensions":[{"type":"GIT",
+                        "url":"git@github.com:cloew/PythonPBF"},
+                       {"type":"PYLIB"}]
+},
+{
+    "name":"TogglPBF",
+    "path":{"envVar":"kao_pbf_dir",
+               "path":"TogglPBF"},
+    "extensions":[{"type":"GIT",
+                        "url":"git@github.com:cloew/TogglPBF"},
+                       {"type":"PYLIB"}]
+},
+{
+    "name":"UnittestPBF",
+    "path":{"envVar":"kao_pbf_dir",
+               "path":"UnittestPBF"},
+    "extensions":[{"type":"GIT",
+                        "url":"git@github.com:cloew/UnittestPBF"},
+                       {"type":"PYLIB"}]
+},
+{
+    "name":"NytOwl",
+    "path":{"envVar":"kao_dir",
+               "path":"NytOwlTextEditor",
+               "src":"src"},
+    "extensions":[{"type":"GIT",
+                        "url":"git@github.com:cloew/Nyt-Owl-Editor"}]
+},
+{
+    "name":"DeckBuilding",
+    "path":{"envVar":"kao_games_dir",
+               "path":"DeckBuilding",
+               "src":"src"},
+    "extensions":[{"type":"GIT",
+                        "url":"git@github.com:cloew/DeckBuilding"}]
+},
+{
+    "name":"Pkmn",
+    "path":{"envVar":"kao_games_dir",
+               "path":"PokemonPython",
+               "src":"src"},
+    "extensions":[{"type":"GIT",
+                        "url":"git@github.com:cloew/Pokemon-Project"}]
+},
+{
+    "name":"PyMine2",
+    "path":{"envVar":"kao_games_dir",
+               "path":"PyMine2",
+               "src":"src"},
+    "extensions":[{"type":"GIT",
+                        "url":"git@bitbucket.org:cloew/pymine2"}]
+}
+]
