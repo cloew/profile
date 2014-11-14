@@ -133,7 +133,7 @@
     "name":"NytOwl",
     "path":{"envVar":"kao_dir",
                "path":"NytOwlTextEditor",
-               "src":"src"},
+               "srcPath":"src"},
     "extensions":[{"type":"GIT",
                         "url":"git@github.com:cloew/Nyt-Owl-Editor"}]
 },
@@ -141,7 +141,7 @@
     "name":"DeckBuilding",
     "path":{"envVar":"kao_games_dir",
                "path":"DeckBuilding",
-               "src":"src"},
+               "srcPath":"src"},
     "extensions":[{"type":"GIT",
                         "url":"git@github.com:cloew/DeckBuilding"}]
 },
@@ -149,7 +149,7 @@
     "name":"Pkmn",
     "path":{"envVar":"kao_games_dir",
                "path":"PokemonPython",
-               "src":"src"},
+               "srcPath":"src"},
     "extensions":[{"type":"GIT",
                         "url":"git@github.com:cloew/Pokemon-Project"}]
 },
@@ -157,7 +157,7 @@
     "name":"PyMine2",
     "path":{"envVar":"kao_games_dir",
                "path":"PyMine2",
-               "src":"src"},
+               "srcPath":"src"},
     "extensions":[{"type":"GIT",
                         "url":"git@bitbucket.org:cloew/pymine2"}]
 }
