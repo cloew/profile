@@ -68,97 +68,98 @@
 {
     "name":"Nytram",
     "path":{"envVar":"kao_lib_dir",
-               "path":"Nytram"},
+            "path":"Nytram",
+            "srcPath":"src"},
     "extensions":[{"type":"GIT",
-                        "url":"git@github.com:cloew/Nytram"}]
+                   "url":"git@github.com:cloew/Nytram"}]
 },
 {
     "name":"pytoggl",
     "path":{"envVar":"kao_lib_dir",
-               "path":"pytoggl",
-               "srcPath":"src"},
+            "path":"pytoggl",
+            "srcPath":"src"},
     "extensions":[{"type":"GIT",
-                        "url":"git@github.com:cloew/pytoggl"},
-                       {"type":"PYLIB"}]
+                   "url":"git@github.com:cloew/pytoggl"},
+                  {"type":"PYLIB"}]
 },
 {
     "name":"PBF",
     "path":{"envVar":"kao_pbf_dir",
-               "path":"ProgrammersBestFriend"},
+            "path":"ProgrammersBestFriend"},
     "extensions":[{"type":"GIT",
-                        "url":"git@github.com:cloew/ProgrammersBestFriend"},
-                       {"type":"PYLIB"}]
+                   "url":"git@github.com:cloew/ProgrammersBestFriend"},
+                  {"type":"PYLIB"}]
 },
 {
     "name":"DevToolsPBF",
     "path":{"envVar":"kao_pbf_dir",
-               "path":"DevToolsPBF"},
+            "path":"DevToolsPBF"},
     "extensions":[{"type":"GIT",
-                        "url":"git@github.com:cloew/DevToolsPBF"},
-                       {"type":"PYLIB"}]
+                   "url":"git@github.com:cloew/DevToolsPBF"},
+                  {"type":"PYLIB"}]
 },
 {
     "name":"KaoGUIPBF",
     "path":{"envVar":"kao_pbf_dir",
-               "path":"KaoGUIPBF"},
+            "path":"KaoGUIPBF"},
     "extensions":[{"type":"GIT",
-                        "url":"git@github.com:cloew/KaoGUIPBF"},
-                       {"type":"PYLIB"}]
+                   "url":"git@github.com:cloew/KaoGUIPBF"},
+                  {"type":"PYLIB"}]
 },
 {
     "name":"PythonPBF",
     "path":{"envVar":"kao_pbf_dir",
-               "path":"PythonPBF"},
+            "path":"PythonPBF"},
     "extensions":[{"type":"GIT",
-                        "url":"git@github.com:cloew/PythonPBF"},
-                       {"type":"PYLIB"}]
+                   "url":"git@github.com:cloew/PythonPBF"},
+                  {"type":"PYLIB"}]
 },
 {
     "name":"TogglPBF",
     "path":{"envVar":"kao_pbf_dir",
-               "path":"TogglPBF"},
+            "path":"TogglPBF"},
     "extensions":[{"type":"GIT",
-                        "url":"git@github.com:cloew/TogglPBF"},
-                       {"type":"PYLIB"}]
+                   "url":"git@github.com:cloew/TogglPBF"},
+                  {"type":"PYLIB"}]
 },
 {
     "name":"UnittestPBF",
     "path":{"envVar":"kao_pbf_dir",
-               "path":"UnittestPBF"},
+            "path":"UnittestPBF"},
     "extensions":[{"type":"GIT",
-                        "url":"git@github.com:cloew/UnittestPBF"},
-                       {"type":"PYLIB"}]
+                   "url":"git@github.com:cloew/UnittestPBF"},
+                  {"type":"PYLIB"}]
 },
 {
     "name":"NytOwl",
     "path":{"envVar":"kao_dir",
-               "path":"NytOwlTextEditor",
-               "srcPath":"src"},
+            "path":"NytOwlTextEditor",
+            "srcPath":"src"},
     "extensions":[{"type":"GIT",
-                        "url":"git@github.com:cloew/Nyt-Owl-Editor"}]
+                   "url":"git@github.com:cloew/Nyt-Owl-Editor"}]
 },
 {
     "name":"DeckBuilding",
     "path":{"envVar":"kao_games_dir",
-               "path":"DeckBuilding",
-               "srcPath":"src"},
+            "path":"DeckBuilding",
+            "srcPath":"src"},
     "extensions":[{"type":"GIT",
-                        "url":"git@github.com:cloew/DeckBuilding"}]
+                   "url":"git@github.com:cloew/DeckBuilding"}]
 },
 {
     "name":"Pkmn",
     "path":{"envVar":"kao_games_dir",
-               "path":"PokemonPython",
-               "srcPath":"src"},
+            "path":"PokemonPython",
+            "srcPath":"src"},
     "extensions":[{"type":"GIT",
-                        "url":"git@github.com:cloew/Pokemon-Project"}]
+                   "url":"git@github.com:cloew/Pokemon-Project"}]
 },
 {
     "name":"PyMine2",
     "path":{"envVar":"kao_games_dir",
-               "path":"PyMine2",
-               "srcPath":"src"},
+            "path":"PyMine2",
+            "srcPath":"src"},
     "extensions":[{"type":"GIT",
-                        "url":"git@bitbucket.org:cloew/pymine2"}]
+                   "url":"git@bitbucket.org:cloew/pymine2"}]
 }
 ]
