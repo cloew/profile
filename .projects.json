@@ -131,6 +131,14 @@
                   {"type":"PYLIB"}]
 },
 {
+    "name":"VisualStudioPBF",
+    "path":{"envVar":"kao_pbf_dir",
+            "path":"VisualStudioPBF"},
+    "extensions":[{"type":"GIT",
+                   "url":"git@github.com:cloew/VisualStudioPBF"},
+                  {"type":"PYLIB"}]
+},
+{
     "name":"NytOwl",
     "path":{"envVar":"kao_dir",
             "path":"NytOwlTextEditor",
