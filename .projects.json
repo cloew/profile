@@ -147,6 +147,14 @@
                    "url":"git@github.com:cloew/Nyt-Owl-Editor"}]
 },
 {
+    "name":"VocabTester",
+    "path":{"envVar":"kao_dir",
+            "path":"VocabTester",
+            "srcPath":"src"},
+    "extensions":[{"type":"GIT",
+                   "url":"git@github.com:cloew/VocabTester"}]
+},
+{
     "name":"DeckBuilding",
     "path":{"envVar":"kao_games_dir",
             "path":"DeckBuilding",
