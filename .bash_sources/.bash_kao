@@ -98,6 +98,9 @@ alias pbf-it="pbf insert test"
 alias a-pymine="cd $pymine_src"
 alias s-pymine="pymine; start"
 
+#Vocab Commands
+alias mk-css="sass Server/static/stylesheets/vocab.scss:Server/static/stylesheets/vocab.css"
+
 # Project Functions
 function pkmn() {
     src=$poke_src
