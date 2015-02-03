@@ -108,8 +108,6 @@ function mk-css() {
     for filename in $dir/*.scss;
     do
         destination="${filename%.*}.css";
-        echo "Filename: $filename";
-        echo "Destination: $destination";
         sass $filename:$destination;
     done
 }
