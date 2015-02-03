@@ -50,6 +50,15 @@
                        {"type":"PYLIB"}]
 },
 {
+    "name":"KaoJson",
+    "path":{"envVar":"kao_lib_dir",
+               "path":"KaoJson",
+               "srcPath":"src"},
+    "extensions":[{"type":"GIT",
+                        "url":"git@github.com:cloew/KaoJson"},
+                       {"type":"PYLIB"}]
+},
+{
     "name":"KaoProject",
     "path":{"envVar":"kao_lib_dir",
                "path":"KaoProject"},
@@ -63,6 +72,15 @@
                "path":"KaoPyRunner"},
     "extensions":[{"type":"GIT",
                         "url":"git@github.com:cloew/KaoPyRunner"},
+                       {"type":"PYLIB"}]
+},
+{
+    "name":"LanguageEggs",
+    "path":{"envVar":"kao_lib_dir",
+               "path":"LanguageEggs",
+               "srcPath":"src"},
+    "extensions":[{"type":"GIT",
+                        "url":"git@github.com:cloew/LanguageEggs"},
                        {"type":"PYLIB"}]
 },
 {
