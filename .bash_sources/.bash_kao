@@ -107,8 +107,11 @@ function mk-css() {
     fi
     for filename in $dir/*.scss;
     do
-        destination="${filename%.*}.css";
-        sass $filename:$destination;
+        if [[ $filename != $dir/_* ]]
+          then
+            destination="${filename%.*}.css";
+            sass $filename:$destination;
+        fi
     done
 }
 
