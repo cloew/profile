@@ -2,35 +2,44 @@
 {
     "name":"KaoCommand",
     "path":{"envVar":"kao_lib_dir",
-               "path":"KaoCommand"},
+            "path":"KaoCommand"},
     "extensions":[{"type":"GIT",
-                        "url":"git@github.com:cloew/KaoCommand"},
-                       {"type":"PYLIB"}]
+                   "url":"git@github.com:cloew/KaoCommand"},
+                  {"type":"PYLIB"}]
+},
+{
+    "name":"KaoConfig",
+    "path":{"envVar":"kao_lib_dir",
+            "path":"KaoConfig",
+            "srcPath":"src"},
+    "extensions":[{"type":"GIT",
+                   "url":"git@github.com:cloew/KaoConfig"},
+                  {"type":"PYLIB"}]
 },
 {
     "name":"KaoConsole",
     "path":{"envVar":"kao_lib_dir",
-               "path":"KaoConsole"},
+            "path":"KaoConsole"},
     "extensions":[{"type":"GIT",
-                        "url":"git@github.com:cloew/KaoConsole"},
-                       {"type":"PYLIB"}]
+                   "url":"git@github.com:cloew/KaoConsole"},
+                  {"type":"PYLIB"}]
 },
 {
     "name":"KaoDeck",
     "path":{"envVar":"kao_lib_dir",
-               "path":"KaoDeck"},
+            "path":"KaoDeck"},
     "extensions":[{"type":"GIT",
-                        "url":"git@github.com:cloew/KaoDeck"},
-                       {"type":"PYLIB"}]
+                   "url":"git@github.com:cloew/KaoDeck"},
+                  {"type":"PYLIB"}]
 },
 {
     "name":"KaoFactory",
     "path":{"envVar":"kao_lib_dir",
-               "path":"KaoFactory",
-               "srcPath":"src"},
+            "path":"KaoFactory",
+            "srcPath":"src"},
     "extensions":[{"type":"GIT",
-                        "url":"git@github.com:cloew/KaoFactory"},
-                       {"type":"PYLIB"}]
+                   "url":"git@github.com:cloew/KaoFactory"},
+                  {"type":"PYLIB"}]
 },
 {
     "name":"KaoFlask",
