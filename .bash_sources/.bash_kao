@@ -115,6 +115,25 @@ function mk-css() {
     done
 }
 
+# Spider Functions
+function mk-js() {
+    dir=$1;
+    c=`pwd`;
+    if [ -z "$1" ]
+      then
+        dir="Server/static/js";
+    fi
+    cd $dir;
+    for filename in *.spider;
+    do
+        if [[ $filename != _* ]]
+          then
+            spider -c $filename;
+        fi
+    done
+    cd $c;
+}
+
 # Project Functions
 function pkmn() {
     src=$poke_src
