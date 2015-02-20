@@ -263,9 +263,7 @@ function get-rails {
 # Project Builders
 function mk-py-package  {
     mkgitdir $1 $2
-    pbf new pbf-properties .
-    pbf insert pbf-package pbf_python
-    pbf insert pbf-package pbf_python_unittest
+    pbf new pbf-properties -c python
     mkdir src
     pbf mk py-package src/ $3
     ga src
