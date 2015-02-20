@@ -33,6 +33,15 @@
                   {"type":"PYLIB"}]
 },
 {
+    "name":"KaoDecorators",
+    "path":{"envVar":"kao_lib_dir",
+            "path":"KaoDecorators",
+            "srcPath":"src"},
+    "extensions":[{"type":"GIT",
+                   "url":"git@github.com:cloew/KaoDecorators"},
+                  {"type":"PYLIB"}]
+},
+{
     "name":"KaoFactory",
     "path":{"envVar":"kao_lib_dir",
             "path":"KaoFactory",
@@ -44,53 +53,62 @@
 {
     "name":"KaoFlask",
     "path":{"envVar":"kao_lib_dir",
-               "path":"KaoFlask",
-               "srcPath":"src"},
+            "path":"KaoFlask",
+            "srcPath":"src"},
     "extensions":[{"type":"GIT",
-                        "url":"git@github.com:cloew/KaoFlask"},
-                       {"type":"PYLIB"}]
+                   "url":"git@github.com:cloew/KaoFlask"},
+                  {"type":"PYLIB"}]
 },
 {
     "name":"KaoGUI",
     "path":{"envVar":"kao_lib_dir",
-               "path":"KaoGUI"},
+            "path":"KaoGUI"},
     "extensions":[{"type":"GIT",
-                        "url":"git@github.com:cloew/KaoGUI"},
-                       {"type":"PYLIB"}]
+                   "url":"git@github.com:cloew/KaoGUI"},
+                  {"type":"PYLIB"}]
 },
 {
     "name":"KaoJson",
     "path":{"envVar":"kao_lib_dir",
-               "path":"KaoJson",
-               "srcPath":"src"},
+            "path":"KaoJson",
+            "srcPath":"src"},
     "extensions":[{"type":"GIT",
-                        "url":"git@github.com:cloew/KaoJson"},
-                       {"type":"PYLIB"}]
+                   "url":"git@github.com:cloew/KaoJson"},
+                  {"type":"PYLIB"}]
 },
 {
     "name":"KaoProject",
     "path":{"envVar":"kao_lib_dir",
-               "path":"KaoProject"},
+            "path":"KaoProject"},
     "extensions":[{"type":"GIT",
-                        "url":"git@github.com:cloew/KaoProject"},
-                       {"type":"PYLIB"}]
+                   "url":"git@github.com:cloew/KaoProject"},
+                  {"type":"PYLIB"}]
 },
 {
     "name":"KaoPyRunner",
     "path":{"envVar":"kao_lib_dir",
-               "path":"KaoPyRunner"},
+            "path":"KaoPyRunner"},
     "extensions":[{"type":"GIT",
-                        "url":"git@github.com:cloew/KaoPyRunner"},
-                       {"type":"PYLIB"}]
+                   "url":"git@github.com:cloew/KaoPyRunner"},
+                  {"type":"PYLIB"}]
+},
+{
+    "name":"KaoXML",
+    "path":{"envVar":"kao_lib_dir",
+            "path":"KaoXML",
+            "srcPath":"src"},
+    "extensions":[{"type":"GIT",
+                   "url":"git@github.com:cloew/KaoXML"},
+                  {"type":"PYLIB"}]
 },
 {
     "name":"LanguageEggs",
     "path":{"envVar":"kao_lib_dir",
-               "path":"LanguageEggs",
-               "srcPath":"src"},
+            "path":"LanguageEggs",
+            "srcPath":"src"},
     "extensions":[{"type":"GIT",
-                        "url":"git@github.com:cloew/LanguageEggs"},
-                       {"type":"PYLIB"}]
+                   "url":"git@github.com:cloew/LanguageEggs"},
+                  {"type":"PYLIB"}]
 },
 {
     "name":"Nytram",
