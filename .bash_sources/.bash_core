@@ -270,3 +270,10 @@ function mk-py-package  {
     gcm 'Added Boilerplate Package code'
     gps
 }
+function mk-pbf-package  {
+    mkgitdir $1 $2
+    pbf mk pbf-package . $3
+    ga .
+    gcm 'Added Boilerplate PBF Package code'
+    gps
+}
