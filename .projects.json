@@ -136,6 +136,14 @@
                   {"type":"PYLIB"}]
 },
 {
+    "name":"AngularPBF",
+    "path":{"envVar":"kao_pbf_dir",
+            "path":"AngularPBF"},
+    "extensions":[{"type":"GIT",
+                   "url":"git@github.com:cloew/AngularPBF"},
+                  {"type":"PYLIB"}]
+},
+{
     "name":"DevToolsPBF",
     "path":{"envVar":"kao_pbf_dir",
             "path":"DevToolsPBF"},
