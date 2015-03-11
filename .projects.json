@@ -192,6 +192,14 @@
                   {"type":"PYLIB"}]
 },
 {
+    "name":"Caper",
+    "path":{"envVar":"kao_dir",
+            "path":"Caper",
+            "srcPath":"src"},
+    "extensions":[{"type":"GIT",
+                   "url":"git@github.com:cloew/Caper"}]
+},
+{
     "name":"NytOwl",
     "path":{"envVar":"kao_dir",
             "path":"NytOwlTextEditor",
