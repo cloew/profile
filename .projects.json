@@ -102,6 +102,15 @@
                   {"type":"PYLIB"}]
 },
 {
+    "name":"Knot",
+    "path":{"envVar":"kao_lib_dir",
+            "path":"Knot",
+            "srcPath":"src"},
+    "extensions":[{"type":"GIT",
+                   "url":"git@github.com:cloew/Knot"},
+                  {"type":"PYLIB"}]
+},
+{
     "name":"LanguageEggs",
     "path":{"envVar":"kao_lib_dir",
             "path":"LanguageEggs",
