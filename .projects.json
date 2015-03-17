@@ -137,6 +137,15 @@
                   {"type":"PYLIB"}]
 },
 {
+    "name":"SmartDefaults",
+    "path":{"envVar":"kao_lib_dir",
+            "path":"SmartDefaults",
+            "srcPath":"src"},
+    "extensions":[{"type":"GIT",
+                   "url":"git@github.com:cloew/SmartDefaults"},
+                  {"type":"PYLIB"}]
+},
+{
     "name":"PBF",
     "path":{"envVar":"kao_pbf_dir",
             "path":"ProgrammersBestFriend"},
