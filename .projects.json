@@ -51,6 +51,15 @@
                   {"type":"PYLIB"}]
 },
 {
+    "name":"KaoFile",
+    "path":{"envVar":"kao_lib_dir",
+            "path":"KaoFile",
+            "srcPath":"src"},
+    "extensions":[{"type":"GIT",
+                   "url":"git@github.com:cloew/KaoFile"},
+                  {"type":"PYLIB"}]
+},
+{
     "name":"KaoFlask",
     "path":{"envVar":"kao_lib_dir",
             "path":"KaoFlask",
