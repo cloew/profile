@@ -162,6 +162,14 @@ function mkgitdir () {
     g-start $2
 }
 
+function gmb() {
+    currentBranch=`git rev-parse --abbrev-ref HEAD`
+    gch master
+    gm $currentBranch
+    gps
+    gch $currentBranch
+}
+
 function gnb() {
     gb $1
     gch $1
