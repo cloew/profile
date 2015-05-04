@@ -54,6 +54,7 @@ alias gs="git status"
 alias grm="git rm"
 alias gmv="git mv"
 alias gdf="git diff"
+alias g-curr-branch="git rev-parse --abbrev-ref HEAD"
 
 # SVN Aliases
 alias ss="svn status"
@@ -161,12 +162,16 @@ function mkgitdir () {
     cd $1
     g-start $2
 }
-
-function gmb() {
-    currentBranch=`git rev-parse --abbrev-ref HEAD`
+function gfb() {
+    currentBranch=`g-curr-branch`
     gch master
     gm $currentBranch
     gps
+}
+
+function gmb() {
+    currentBranch=`g-curr-branch`
+    gfb
     gch $currentBranch
 }
 
