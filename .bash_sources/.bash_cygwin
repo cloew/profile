@@ -23,3 +23,9 @@ function get-apt-cyg() {
 	mv apt-cyg /usr/local/bin 
 	apt-cyg install unzip
 }
+
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
+export VIRTUALENVWRAPPER_VIRTUALENV=/usr/bin/virtualenv
+export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
+
+source /usr/bin/virtualenvwrapper.sh
