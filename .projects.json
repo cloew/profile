@@ -35,8 +35,7 @@
 {
     "name":"KaoDecorators",
     "path":{"envVar":"kao_lib_dir",
-            "path":"KaoDecorators",
-            "srcPath":"src"},
+            "path":"KaoDecorators"},
     "extensions":[{"type":"GIT",
                    "url":"git@github.com:cloew/KaoDecorators"},
                   {"type":"PYLIB"}]
@@ -44,8 +43,7 @@
 {
     "name":"KaoFactory",
     "path":{"envVar":"kao_lib_dir",
-            "path":"KaoFactory",
-            "srcPath":"src"},
+            "path":"KaoFactory"},
     "extensions":[{"type":"GIT",
                    "url":"git@github.com:cloew/KaoFactory"},
                   {"type":"PYLIB"}]
@@ -62,8 +60,7 @@
 {
     "name":"KaoFlask",
     "path":{"envVar":"kao_lib_dir",
-            "path":"KaoFlask",
-            "srcPath":"src"},
+            "path":"KaoFlask"},
     "extensions":[{"type":"GIT",
                    "url":"git@github.com:cloew/KaoFlask"},
                   {"type":"PYLIB"}]
@@ -79,8 +76,7 @@
 {
     "name":"KaoJson",
     "path":{"envVar":"kao_lib_dir",
-            "path":"KaoJson",
-            "srcPath":"src"},
+            "path":"KaoJson"},
     "extensions":[{"type":"GIT",
                    "url":"git@github.com:cloew/KaoJson"},
                   {"type":"PYLIB"}]
@@ -122,8 +118,7 @@
 {
     "name":"LanguageEggs",
     "path":{"envVar":"kao_lib_dir",
-            "path":"LanguageEggs",
-            "srcPath":"src"},
+            "path":"LanguageEggs"},
     "extensions":[{"type":"GIT",
                    "url":"git@github.com:cloew/LanguageEggs"},
                   {"type":"PYLIB"}]
@@ -148,8 +143,7 @@
 {
     "name":"SmartDefaults",
     "path":{"envVar":"kao_lib_dir",
-            "path":"SmartDefaults",
-            "srcPath":"src"},
+            "path":"SmartDefaults"},
     "extensions":[{"type":"GIT",
                    "url":"git@github.com:cloew/SmartDefaults"},
                   {"type":"PYLIB"}]
