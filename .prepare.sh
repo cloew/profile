@@ -43,6 +43,8 @@ mkdir $kao_pbf_dir
 # Get PIP
 $install curl
 get-pip "$install"
+pip install virtualenv
+pip install virtualenvwrapper
 pip install blessings
 pip install flask
 pip install requests
