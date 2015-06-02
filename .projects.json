@@ -92,7 +92,8 @@
 {
     "name":"KaoModules",
     "path":{"envVar":"kao_lib_dir",
-            "path":"KaoModules"},
+            "path":"KaoModules",
+            "srcPath":"src"},
     "extensions":[{"type":"GIT",
                    "url":"git@github.com:cloew/KaoModules"},
                   {"type":"PYLIB"}]
