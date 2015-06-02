@@ -66,6 +66,14 @@
                   {"type":"PYLIB"}]
 },
 {
+    "name":"KaoFn",
+    "path":{"envVar":"kao_lib_dir",
+            "path":"KaoFn"},
+    "extensions":[{"type":"GIT",
+                   "url":"git@github.com:cloew/KaoFn"},
+                  {"type":"PYLIB"}]
+},
+{
     "name":"KaoGUI",
     "path":{"envVar":"kao_lib_dir",
             "path":"KaoGUI"},
@@ -79,6 +87,14 @@
             "path":"KaoJson"},
     "extensions":[{"type":"GIT",
                    "url":"git@github.com:cloew/KaoJson"},
+                  {"type":"PYLIB"}]
+},
+{
+    "name":"KaoModules",
+    "path":{"envVar":"kao_lib_dir",
+            "path":"KaoModules"},
+    "extensions":[{"type":"GIT",
+                   "url":"git@github.com:cloew/KaoModules"},
                   {"type":"PYLIB"}]
 },
 {
@@ -98,12 +114,30 @@
                   {"type":"PYLIB"}]
 },
 {
+    "name":"KaoResources",
+    "path":{"envVar":"kao_lib_dir",
+            "path":"KaoResources",
+            "srcPath":"src"},
+    "extensions":[{"type":"GIT",
+                   "url":"git@github.com:cloew/KaoResources"},
+                  {"type":"PYLIB"}]
+},
+{
     "name":"KaoXML",
     "path":{"envVar":"kao_lib_dir",
             "path":"KaoXML",
             "srcPath":"src"},
     "extensions":[{"type":"GIT",
                    "url":"git@github.com:cloew/KaoXML"},
+                  {"type":"PYLIB"}]
+},
+{
+    "name":"KaoXObj",
+    "path":{"envVar":"kao_lib_dir",
+            "path":"KaoXObj",
+            "srcPath":"src"},
+    "extensions":[{"type":"GIT",
+                   "url":"git@github.com:cloew/KaoXObj"},
                   {"type":"PYLIB"}]
 },
 {
