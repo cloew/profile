@@ -53,6 +53,7 @@ alias gplom="git pull origin master"
 alias gplcb="git pull origin $cb"
 alias gs="git status"
 alias grm="git rm"
+alias grm-keep="git rm --cached"
 alias gmv="git mv"
 alias gdf="git diff"
 alias g-curr-branch="git rev-parse --abbrev-ref HEAD"
@@ -299,6 +300,7 @@ function mk-py-package  {
     pbf new pbf-properties -c python
     pbf mk py-package . $3
     ga .
+    grm-keep .pbf-properties
     gcm 'Added Boilerplate Package code'
     gps
 }
