@@ -297,9 +297,8 @@ function mk-py-cli-package  {
 function mk-py-package  {
     mkgitdir $1 $2
     pbf new pbf-properties -c python
-    mkdir src
-    pbf mk py-package src/ $3
-    ga src
+    pbf mk py-package . $3
+    ga .
     gcm 'Added Boilerplate Package code'
     gps
 }
