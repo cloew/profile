@@ -58,6 +58,9 @@ alias gmv="git mv"
 alias gdf="git diff"
 alias g-curr-branch="git rev-parse --abbrev-ref HEAD"
 
+# Meteor Aliases
+alias meteor="meteor.bat"
+
 # SVN Aliases
 alias ss="svn status"
 alias sa="svn add"
