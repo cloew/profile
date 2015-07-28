@@ -68,7 +68,7 @@ alias a-lolcode="cd $lol_code_parser_dir"
 
 # Nytram Commands
 alias s-nytram="a-nytram; cs $nytram_src/cpp/project/Visual\ Studio/Visual\ Studio.sln"
-alias relink-nytram="rm $nytram_src/python/Nytram.dll; ln $nytram_src/cpp/runner/NytramRunner/x64/Debug/Nytram.dll $nytram_src/python/Nytram.dll"
+alias relink-nytram="rm Nytram.dll; ln $nytram_src/cpp/runner/NytramRunner/x64/Debug/Nytram.dll"
 
 # Nyt Owl Commands
 alias note="python -u $nytowl_src/main.py"
