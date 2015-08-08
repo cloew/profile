@@ -186,7 +186,12 @@ function gnb() {
     gps -u origin $1
 }
 
-function gpb() {
+function g-delb() {
+    gb -D $1
+    gps origin --delete $1
+}
+
+function gplb() {
     gb $1
     gch $1
     gpl -u origin $1
