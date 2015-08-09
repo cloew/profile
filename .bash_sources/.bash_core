@@ -167,16 +167,23 @@ function mkgitdir () {
     cd $1
     g-start $2
 }
-function gfb() {
+
+function g-merge-branch() {
     currentBranch=`g-curr-branch`
     gch master
     gm $currentBranch
     gps
 }
 
-function gmb() {
+function g-finish-branch() {
     currentBranch=`g-curr-branch`
-    gfb
+    g-merge-branch
+    g-del-branch $currentBranch
+}
+
+function g-mergeback() {
+    currentBranch=`g-curr-branch`
+    g-merge-branch
     gch $currentBranch
 }
 
@@ -186,12 +193,12 @@ function gnb() {
     gps -u origin $1
 }
 
-function g-delb() {
+function g-del-branch() {
     gb -D $1
     gps origin --delete $1
 }
 
-function gplb() {
+function gpl-branch() {
     gb $1
     gch $1
     gpl -u origin $1
