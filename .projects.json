@@ -41,6 +41,14 @@
                   {"type":"PYLIB"}]
 },
 {
+    "name":"KaoExtensions",
+    "path":{"envVar":"kao_lib_dir",
+            "path":"KaoExtensions"},
+    "extensions":[{"type":"GIT",
+                   "url":"git@github.com:cloew/KaoExtensions"},
+                  {"type":"PYLIB"}]
+},
+{
     "name":"KaoFactory",
     "path":{"envVar":"kao_lib_dir",
             "path":"KaoFactory"},
@@ -66,6 +74,30 @@
                   {"type":"PYLIB"}]
 },
 {
+    "name":"KaoFlaskAuth",
+    "path":{"envVar":"kao_lib_dir",
+            "path":"KaoFlaskAuth"},
+    "extensions":[{"type":"GIT",
+                   "url":"git@github.com:cloew/KaoFlaskAuth"},
+                  {"type":"PYLIB"}]
+},
+{
+    "name":"KaoFlaskSQLAlchemy",
+    "path":{"envVar":"kao_lib_dir",
+            "path":"KaoFlaskSQLAlchemy"},
+    "extensions":[{"type":"GIT",
+                   "url":"git@github.com:cloew/KaoFlaskSQLAlchemy"},
+                  {"type":"PYLIB"}]
+},
+{
+    "name":"KaoFlaskSSLify",
+    "path":{"envVar":"kao_lib_dir",
+            "path":"KaoFlaskSSLify"},
+    "extensions":[{"type":"GIT",
+                   "url":"git@github.com:cloew/KaoFlaskSSLify"},
+                  {"type":"PYLIB"}]
+},
+{
     "name":"KaoFn",
     "path":{"envVar":"kao_lib_dir",
             "path":"KaoFn"},
@@ -87,6 +119,15 @@
             "path":"KaoJson"},
     "extensions":[{"type":"GIT",
                    "url":"git@github.com:cloew/KaoJson"},
+                  {"type":"PYLIB"}]
+},
+{
+    "name":"KaoListDict",
+    "path":{"envVar":"kao_lib_dir",
+            "path":"KaoListDict",
+            "srcPath":"src"},
+    "extensions":[{"type":"GIT",
+                   "url":"git@github.com:cloew/KaoListDict"},
                   {"type":"PYLIB"}]
 },
 {
