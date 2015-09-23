@@ -210,8 +210,7 @@
 {
     "name":"pytoggl",
     "path":{"envVar":"kao_lib_dir",
-            "path":"pytoggl",
-            "srcPath":"src"},
+            "path":"pytoggl"},
     "extensions":[{"type":"GIT",
                    "url":"git@github.com:cloew/pytoggl"},
                   {"type":"PYLIB"}]
