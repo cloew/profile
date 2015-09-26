@@ -10,8 +10,7 @@
 {
     "name":"KaoConfig",
     "path":{"envVar":"kao_lib_dir",
-            "path":"KaoConfig",
-            "srcPath":"src"},
+            "path":"KaoConfig"},
     "extensions":[{"type":"GIT",
                    "url":"git@github.com:cloew/KaoConfig"},
                   {"type":"PYLIB"}]
