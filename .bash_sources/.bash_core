@@ -303,9 +303,8 @@ function get-rails {
 function mk-py-cli-package  {
     mkgitdir $1 $2
     pbf new pbf-properties -c python
-    mkdir src
-    pbf new main src/
-    ga src
+    pbf new main .
+    ga main.py
     gcm 'Added Boilerplate Python CLI code'
     gps
 }
