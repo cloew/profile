@@ -129,6 +129,14 @@
                   {"type":"PYLIB"}]
 },
 {
+    "name":"KaoList",
+    "path":{"envVar":"kao_gen_dir",
+            "path":"KaoList"},
+    "extensions":[{"type":"GIT",
+                   "url":"git@github.com:cloew/KaoList"},
+                  {"type":"PYLIB"}]
+},
+{
     "name":"KaoListDict",
     "path":{"envVar":"kao_gen_dir",
             "path":"KaoListDict",
