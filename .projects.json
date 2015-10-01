@@ -1,5 +1,13 @@
 [
 {
+    "name":"CallableEnum",
+    "path":{"envVar":"kao_gen_dir",
+            "path":"CallableEnum"},
+    "extensions":[{"type":"GIT",
+                   "url":"git@github.com:cloew/CallableEnum"},
+                  {"type":"PYLIB"}]
+},
+{
     "name":"KaoCommand",
     "path":{"envVar":"kao_lib_dir",
             "path":"KaoCommand"},
@@ -9,7 +17,7 @@
 },
 {
     "name":"KaoConfig",
-    "path":{"envVar":"kao_lib_dir",
+    "path":{"envVar":"kao_data_dir",
             "path":"KaoConfig"},
     "extensions":[{"type":"GIT",
                    "url":"git@github.com:cloew/KaoConfig"},
@@ -17,7 +25,7 @@
 },
 {
     "name":"KaoConsole",
-    "path":{"envVar":"kao_lib_dir",
+    "path":{"envVar":"kao_ui_dir",
             "path":"KaoConsole"},
     "extensions":[{"type":"GIT",
                    "url":"git@github.com:cloew/KaoConsole"},
@@ -33,7 +41,7 @@
 },
 {
     "name":"KaoDecorators",
-    "path":{"envVar":"kao_lib_dir",
+    "path":{"envVar":"kao_gen_dir",
             "path":"KaoDecorators"},
     "extensions":[{"type":"GIT",
                    "url":"git@github.com:cloew/KaoDecorators"},
@@ -41,7 +49,7 @@
 },
 {
     "name":"KaoExtensions",
-    "path":{"envVar":"kao_lib_dir",
+    "path":{"envVar":"kao_data_dir",
             "path":"KaoExtensions"},
     "extensions":[{"type":"GIT",
                    "url":"git@github.com:cloew/KaoExtensions"},
@@ -49,7 +57,7 @@
 },
 {
     "name":"KaoFactory",
-    "path":{"envVar":"kao_lib_dir",
+    "path":{"envVar":"kao_data_dir",
             "path":"KaoFactory"},
     "extensions":[{"type":"GIT",
                    "url":"git@github.com:cloew/KaoFactory"},
@@ -57,7 +65,7 @@
 },
 {
     "name":"KaoFile",
-    "path":{"envVar":"kao_lib_dir",
+    "path":{"envVar":"kao_data_dir",
             "path":"KaoFile",
             "srcPath":"src"},
     "extensions":[{"type":"GIT",
@@ -66,7 +74,7 @@
 },
 {
     "name":"KaoFlask",
-    "path":{"envVar":"kao_lib_dir",
+    "path":{"envVar":"kao_flask_dir",
             "path":"KaoFlask"},
     "extensions":[{"type":"GIT",
                    "url":"git@github.com:cloew/KaoFlask"},
@@ -74,7 +82,7 @@
 },
 {
     "name":"KaoFlaskAuth",
-    "path":{"envVar":"kao_lib_dir",
+    "path":{"envVar":"kao_flask_dir",
             "path":"KaoFlaskAuth"},
     "extensions":[{"type":"GIT",
                    "url":"git@github.com:cloew/KaoFlaskAuth"},
@@ -82,7 +90,7 @@
 },
 {
     "name":"KaoFlaskSQLAlchemy",
-    "path":{"envVar":"kao_lib_dir",
+    "path":{"envVar":"kao_flask_dir",
             "path":"KaoFlaskSQLAlchemy"},
     "extensions":[{"type":"GIT",
                    "url":"git@github.com:cloew/KaoFlaskSQLAlchemy"},
@@ -90,7 +98,7 @@
 },
 {
     "name":"KaoFlaskSSLify",
-    "path":{"envVar":"kao_lib_dir",
+    "path":{"envVar":"kao_flask_dir",
             "path":"KaoFlaskSSLify"},
     "extensions":[{"type":"GIT",
                    "url":"git@github.com:cloew/KaoFlaskSSLify"},
@@ -98,7 +106,7 @@
 },
 {
     "name":"KaoFn",
-    "path":{"envVar":"kao_lib_dir",
+    "path":{"envVar":"kao_gen_dir",
             "path":"KaoFn"},
     "extensions":[{"type":"GIT",
                    "url":"git@github.com:cloew/KaoFn"},
@@ -106,7 +114,7 @@
 },
 {
     "name":"KaoGUI",
-    "path":{"envVar":"kao_lib_dir",
+    "path":{"envVar":"kao_ui_dir",
             "path":"KaoGUI"},
     "extensions":[{"type":"GIT",
                    "url":"git@github.com:cloew/KaoGUI"},
@@ -114,7 +122,7 @@
 },
 {
     "name":"KaoJson",
-    "path":{"envVar":"kao_lib_dir",
+    "path":{"envVar":"kao_data_dir",
             "path":"KaoJson"},
     "extensions":[{"type":"GIT",
                    "url":"git@github.com:cloew/KaoJson"},
@@ -122,7 +130,7 @@
 },
 {
     "name":"KaoListDict",
-    "path":{"envVar":"kao_lib_dir",
+    "path":{"envVar":"kao_gen_dir",
             "path":"KaoListDict",
             "srcPath":"src"},
     "extensions":[{"type":"GIT",
@@ -131,7 +139,7 @@
 },
 {
     "name":"KaoModules",
-    "path":{"envVar":"kao_lib_dir",
+    "path":{"envVar":"kao_gen_dir",
             "path":"KaoModules",
             "srcPath":"src"},
     "extensions":[{"type":"GIT",
@@ -139,8 +147,32 @@
                   {"type":"PYLIB"}]
 },
 {
+    "name":"KaoOperators",
+    "path":{"envVar":"kao_gen_dir",
+            "path":"KaoOperators"},
+    "extensions":[{"type":"GIT",
+                   "url":"git@github.com:cloew/KaoOperators"},
+                  {"type":"PYLIB"}]
+},
+{
+    "name":"KaoParser",
+    "path":{"envVar":"kao_data_dir",
+            "path":"KaoParser"},
+    "extensions":[{"type":"GIT",
+                   "url":"git@github.com:cloew/KaoParser"},
+                  {"type":"PYLIB"}]
+},
+{
+    "name":"KaoPath",
+    "path":{"envVar":"kao_gen_dir",
+            "path":"KaoPath"},
+    "extensions":[{"type":"GIT",
+                   "url":"git@github.com:cloew/KaoPath"},
+                  {"type":"PYLIB"}]
+},
+{
     "name":"KaoProject",
-    "path":{"envVar":"kao_lib_dir",
+    "path":{"envVar":"kao_cli_dir",
             "path":"KaoProject"},
     "extensions":[{"type":"GIT",
                    "url":"git@github.com:cloew/KaoProject"},
@@ -148,7 +180,7 @@
 },
 {
     "name":"KaoPyRunner",
-    "path":{"envVar":"kao_lib_dir",
+    "path":{"envVar":"kao_py_dir",
             "path":"KaoPyRunner"},
     "extensions":[{"type":"GIT",
                    "url":"git@github.com:cloew/KaoPyRunner"},
@@ -156,7 +188,7 @@
 },
 {
     "name":"KaoResources",
-    "path":{"envVar":"kao_lib_dir",
+    "path":{"envVar":"kao_data_dir",
             "path":"KaoResources",
             "srcPath":"src"},
     "extensions":[{"type":"GIT",
@@ -164,8 +196,16 @@
                   {"type":"PYLIB"}]
 },
 {
+    "name":"KaoSequence",
+    "path":{"envVar":"kao_gen_dir",
+            "path":"KaoSequence"},
+    "extensions":[{"type":"GIT",
+                   "url":"git@github.com:cloew/KaoSequence"},
+                  {"type":"PYLIB"}]
+},
+{
     "name":"KaoXML",
-    "path":{"envVar":"kao_lib_dir",
+    "path":{"envVar":"kao_data_dir",
             "path":"KaoXML",
             "srcPath":"src"},
     "extensions":[{"type":"GIT",
@@ -183,7 +223,7 @@
 },
 {
     "name":"Knot",
-    "path":{"envVar":"kao_lib_dir",
+    "path":{"envVar":"kao_ui_dir",
             "path":"Knot",
             "srcPath":"src"},
     "extensions":[{"type":"GIT",
@@ -192,7 +232,7 @@
 },
 {
     "name":"LanguageEggs",
-    "path":{"envVar":"kao_lib_dir",
+    "path":{"envVar":"kao_data_dir",
             "path":"LanguageEggs"},
     "extensions":[{"type":"GIT",
                    "url":"git@github.com:cloew/LanguageEggs"},
@@ -200,7 +240,7 @@
 },
 {
     "name":"Nytram",
-    "path":{"envVar":"kao_lib_dir",
+    "path":{"envVar":"kao_nyt_dir",
             "path":"Nytram",
             "srcPath":"src"},
     "extensions":[{"type":"GIT",
@@ -216,10 +256,26 @@
 },
 {
     "name":"SmartDefaults",
-    "path":{"envVar":"kao_lib_dir",
+    "path":{"envVar":"kao_gen_dir",
             "path":"SmartDefaults"},
     "extensions":[{"type":"GIT",
                    "url":"git@github.com:cloew/SmartDefaults"},
+                  {"type":"PYLIB"}]
+},
+{
+    "name":"DevLog",
+    "path":{"envVar":"kao_cli_dir",
+            "path":"DevLog"},
+    "extensions":[{"type":"GIT",
+                   "url":"git@github.com:cloew/DevLog"},
+                  {"type":"PYLIB"}]
+},
+{
+    "name":"TogglDriver",
+    "path":{"envVar":"kao_cli_dir",
+            "path":"TogglDriver"},
+    "extensions":[{"type":"GIT",
+                   "url":"git@github.com:cloew/TogglDriver"},
                   {"type":"PYLIB"}]
 },
 {

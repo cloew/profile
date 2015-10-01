@@ -2,9 +2,16 @@
 
 # Kao Tessur Paths
 export kao_dir="$dev_dir/KaoTessur"
+export kao_cli_dir="$kao_dir/CLIs"
 export kao_games_dir="$kao_dir/Games"
 export kao_lib_dir="$kao_dir/Libraries"
+export kao_data_dir="$kao_lib_dir/data"
+export kao_gen_dir="$kao_lib_dir/general"
+export kao_flask_dir="$kao_lib_dir/KaoFlask"
+export kao_nyt_dir="$kao_lib_dir/Nytram"
 export kao_pbf_dir="$kao_lib_dir/PBF"
+export kao_py_dir="$kao_lib_dir/python"
+export kao_ui_dir="$kao_lib_dir/ui"
 
 # Toggl Settings
 export toggl_personal_ws="Personal Projects"
