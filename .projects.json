@@ -393,10 +393,10 @@
 {
     "name":"DeckBuilding",
     "path":{"envVar":"kao_games_dir",
-            "path":"DeckBuilding",
+            "path":"DeckBuilding2",
             "srcPath":"src"},
     "extensions":[{"type":"GIT",
-                   "url":"git@github.com:cloew/DeckBuilding"}]
+                   "url":"git@bitbucket.com:cloew/DeckBuilding2"}]
 },
 {
     "name":"Pkmn",
