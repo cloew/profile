@@ -326,3 +326,11 @@ function mk-pbf-package  {
     gcm 'Added Boilerplate PBF Package code'
     gps
 }
+
+function mk-bower-package  {
+    mkgitdir $1 $2
+    bower init --config.interactive
+    ga .
+    gcm 'Added Boilerplate Package code'
+    gps
+}
