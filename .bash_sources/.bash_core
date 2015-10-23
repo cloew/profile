@@ -224,7 +224,7 @@ function mkgitdir () {
 function mkgitdirAndInstall () {
     mkgitdir $1 $2
     cd src/
-    py-install
+    py3-install
 }
 
 # SVN Helpers
