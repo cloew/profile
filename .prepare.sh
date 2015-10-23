@@ -25,6 +25,7 @@ esac
 # Set Git Default 
 git config --global user.name "Chris Loew"
 git config --global user.email cloew123@gmail.com
+git config --global push.default matching
 
 cd ~
 git push -u origin master
