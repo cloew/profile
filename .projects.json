@@ -48,6 +48,14 @@
                   {"type":"PYLIB"}]
 },
 {
+    "name":"KaoDict",
+    "path":{"envVar":"kao_gen_dir",
+            "path":"KaoDict"},
+    "extensions":[{"type":"GIT",
+                   "url":"git@github.com:cloew/KaoDict"},
+                  {"type":"PYLIB"}]
+},
+{
     "name":"KaoExtensions",
     "path":{"envVar":"kao_data_dir",
             "path":"KaoExtensions"},
@@ -219,6 +227,14 @@
                   {"type":"PYLIB"}]
 },
 {
+    "name":"KaoToml",
+    "path":{"envVar":"kao_data_dir",
+            "path":"KaoToml"},
+    "extensions":[{"type":"GIT",
+                   "url":"git@github.com:cloew/KaoToml"},
+                  {"type":"PYLIB"}]
+},
+{
     "name":"KaoTry",
     "path":{"envVar":"kao_gen_dir",
             "path":"KaoTry"},
@@ -291,6 +307,14 @@
             "path":"DevLog"},
     "extensions":[{"type":"GIT",
                    "url":"git@github.com:cloew/DevLog"},
+                  {"type":"PYLIB"}]
+},
+{
+    "name":"Kaovert",
+    "path":{"envVar":"kao_cli_dir",
+            "path":"Kaovert"},
+    "extensions":[{"type":"GIT",
+                   "url":"git@github.com:cloew/Kaovert"},
                   {"type":"PYLIB"}]
 },
 {
