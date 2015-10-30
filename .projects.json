@@ -8,6 +8,14 @@
                   {"type":"PYLIB"}]
 },
 {
+    "name":"flexconfig",
+    "path":{"envVar":"kao_data_dir",
+            "path":"flexconfig"},
+    "extensions":[{"type":"GIT",
+                   "url":"git@github.com:cloew/flexconfig"},
+                  {"type":"PYLIB"}]
+},
+{
     "name":"KaoCommand",
     "path":{"envVar":"kao_lib_dir",
             "path":"KaoCommand"},
