@@ -318,6 +318,14 @@
                   {"type":"PYLIB"}]
 },
 {
+    "name":"tidypip",
+    "path":{"envVar":"kao_cli_dir",
+            "path":"tidypip"},
+    "extensions":[{"type":"GIT",
+                   "url":"git@github.com:cloew/tidypip"},
+                  {"type":"PYLIB"}]
+},
+{
     "name":"TogglDriver",
     "path":{"envVar":"kao_cli_dir",
             "path":"TogglDriver"},
