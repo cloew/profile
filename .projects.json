@@ -220,8 +220,7 @@
 {
     "name":"KaoResources",
     "path":{"envVar":"kao_data_dir",
-            "path":"KaoResources",
-            "srcPath":"src"},
+            "path":"KaoResources"},
     "extensions":[{"type":"GIT",
                    "url":"git@github.com:cloew/KaoResources"},
                   {"type":"PYLIB"}]
