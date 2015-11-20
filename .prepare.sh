@@ -25,6 +25,7 @@ esac
 # Set Git Default 
 git config --global user.name "Chris Loew"
 git config --global user.email cloew123@gmail.com
+git config --global push.default matching
 
 cd ~
 git push -u origin master
@@ -39,16 +40,26 @@ mkdir $kao_dir
 mkdir $kao_games_dir
 mkdir $kao_lib_dir
 mkdir $kao_pbf_dir
+mkdir $kao_cli_dir
+mkdir $kao_data_dir
+mkdir $kao_gen_dir
+mkdir $kao_flask_di
+mkdir $kao_nyt_dir
+mkdir $kao_pbf_dir
+mkdir $kao_py_dir
+mkdir $kao_ui_dir
 
 # Get PIP
 $install curl
-get-pip "$install"
+get-pip python3
 pip install future
 pip install virtualenv
 pip install virtualenvwrapper
 pip install blessings
 pip install flask
 pip install requests
+
+source ~/.bashrc
 
 # Setup Kao Console
 mkgitdirAndInstall $kao_console_dir git@github.com:cloew/KaoConsole.git
@@ -91,9 +102,3 @@ mkgitdir $nytowl_dir git@github.com:cloew/Nyt-Owl-Editor.git
 
 # Setup Pokemon Python
 mkgitdir $pkmn_dir git@github.com:cloew/Pokemon-Project.git
-
-# Setup Excelcient Directories
-mkdir $exc_dir
-
-# Setup Prosperion
-mkgitdir $prosp_dir git@github.com:ExcelcientLLC/Project001.git

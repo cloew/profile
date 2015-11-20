@@ -8,6 +8,14 @@
                   {"type":"PYLIB"}]
 },
 {
+    "name":"flexconfig",
+    "path":{"envVar":"kao_data_dir",
+            "path":"flexconfig"},
+    "extensions":[{"type":"GIT",
+                   "url":"git@github.com:cloew/flexconfig"},
+                  {"type":"PYLIB"}]
+},
+{
     "name":"KaoCommand",
     "path":{"envVar":"kao_lib_dir",
             "path":"KaoCommand"},
@@ -45,6 +53,14 @@
             "path":"KaoDecorators"},
     "extensions":[{"type":"GIT",
                    "url":"git@github.com:cloew/KaoDecorators"},
+                  {"type":"PYLIB"}]
+},
+{
+    "name":"KaoDict",
+    "path":{"envVar":"kao_gen_dir",
+            "path":"KaoDict"},
+    "extensions":[{"type":"GIT",
+                   "url":"git@github.com:cloew/KaoDict"},
                   {"type":"PYLIB"}]
 },
 {
@@ -156,8 +172,7 @@
 {
     "name":"KaoModules",
     "path":{"envVar":"kao_gen_dir",
-            "path":"KaoModules",
-            "srcPath":"src"},
+            "path":"KaoModules"},
     "extensions":[{"type":"GIT",
                    "url":"git@github.com:cloew/KaoModules"},
                   {"type":"PYLIB"}]
@@ -205,8 +220,7 @@
 {
     "name":"KaoResources",
     "path":{"envVar":"kao_data_dir",
-            "path":"KaoResources",
-            "srcPath":"src"},
+            "path":"KaoResources"},
     "extensions":[{"type":"GIT",
                    "url":"git@github.com:cloew/KaoResources"},
                   {"type":"PYLIB"}]
@@ -217,6 +231,14 @@
             "path":"KaoSequence"},
     "extensions":[{"type":"GIT",
                    "url":"git@github.com:cloew/KaoSequence"},
+                  {"type":"PYLIB"}]
+},
+{
+    "name":"KaoToml",
+    "path":{"envVar":"kao_data_dir",
+            "path":"KaoToml"},
+    "extensions":[{"type":"GIT",
+                   "url":"git@github.com:cloew/KaoToml"},
                   {"type":"PYLIB"}]
 },
 {
@@ -292,6 +314,22 @@
             "path":"DevLog"},
     "extensions":[{"type":"GIT",
                    "url":"git@github.com:cloew/DevLog"},
+                  {"type":"PYLIB"}]
+},
+{
+    "name":"Kaovert",
+    "path":{"envVar":"kao_cli_dir",
+            "path":"Kaovert"},
+    "extensions":[{"type":"GIT",
+                   "url":"git@github.com:cloew/Kaovert"},
+                  {"type":"PYLIB"}]
+},
+{
+    "name":"tidypip",
+    "path":{"envVar":"kao_cli_dir",
+            "path":"tidypip"},
+    "extensions":[{"type":"GIT",
+                   "url":"git@github.com:cloew/tidypip"},
                   {"type":"PYLIB"}]
 },
 {

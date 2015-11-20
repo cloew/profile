@@ -3,9 +3,12 @@ function tryToInstallKaoProject() {
 }
 
 function installKaoProject() {
-    libDir=$1
-    pip install argparse;
-    mkgitdirAndInstall $1/KaoCommand git@github.com:cloew/KaoCommand
-    mkgitdirAndInstall $1/KaoFactory git@github.com:cloew/KaoFactory
-    mkgitdirAndInstall $1/KaoProject git@github.com:cloew/KaoProject
+    pip3 install argparse;
+    pip3 install future;
+    
+    mkgitdirAndInstall $kao_gen_dir/KaoDecorators git@github.com:cloew/KaoDecorators
+    mkgitdirAndInstall $kao_gen_dir/KaoModules git@github.com:cloew/KaoModules
+    mkgitdirAndInstall $kao_data_dir/KaoFactory git@github.com:cloew/KaoFactory
+    mkgitdirAndInstall $kao_lib_dir/KaoCommand git@github.com:cloew/KaoCommand
+    mkgitdirAndInstall $kao_cli_dir/KaoProject git@github.com:cloew/KaoProject
 }
