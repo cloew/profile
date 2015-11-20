@@ -12,3 +12,6 @@ export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
 export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
 
 source /usr/local/bin/virtualenvwrapper.sh
+
+# Sublime Text Aliases
+alias st="subl"
