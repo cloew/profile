@@ -1,4 +1,4 @@
-#! /usr/bin/bash
+#!/bin/bash
 
 source ~/.bashrc
 
@@ -43,6 +43,7 @@ mkdir $kao_pbf_dir
 # Get PIP
 $install curl
 get-pip "$install"
+pip install future
 pip install virtualenv
 pip install virtualenvwrapper
 pip install blessings
