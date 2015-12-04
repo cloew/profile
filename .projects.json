@@ -437,6 +437,14 @@
                    "url":"git@bitbucket.com:cloew/DeckBuilding2"}]
 },
 {
+    "name":"Guildmaster",
+    "path":{"envVar":"kao_games_dir",
+            "path":"Guildmaster",
+            "srcPath":"src"},
+    "extensions":[{"type":"GIT",
+                   "url":"git@bitbucket.org:cloew/Guildmaster"}]
+},
+{
     "name":"Pkmn",
     "path":{"envVar":"kao_games_dir",
             "path":"PokemonPython",
