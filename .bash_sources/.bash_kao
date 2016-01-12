@@ -109,6 +109,9 @@ alias s-pymine="pymine; start"
 alias h-deploy="gps heroku master; hu-db"
 alias hu-db="heroku run \"cd src; python manage.py db upgrade\""
 
+function h-import() {
+    heroku run python src/main.py import $@
+}
 
 # SCSS Functions
 function mk-css() {
