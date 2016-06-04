@@ -276,7 +276,7 @@
 },
 {
     "name":"KaoXObj",
-    "path":{"envVar":"kao_lib_dir",
+    "path":{"envVar":"kao_gen_dir",
             "path":"KaoXObj",
             "srcPath":"src"},
     "extensions":[{"type":"GIT",
