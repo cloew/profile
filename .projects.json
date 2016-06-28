@@ -475,5 +475,13 @@
             "srcPath":"src"},
     "extensions":[{"type":"GIT",
                    "url":"git@bitbucket.org:cloew/pymine2"}]
+},
+{
+    "name":"FuzzyAdventure",
+    "path":{"envVar":"kao_games_dir",
+            "path":"fuzzy-adventure",
+            "srcPath":"src"},
+    "extensions":[{"type":"GIT",
+                   "url":"git@bitbucket.org:cloew/fuzzy-adventure"}]
 }
 ]
