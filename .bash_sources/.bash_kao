@@ -48,6 +48,10 @@ export rant_dir=$kao_dir/Rants
 export avatar_rant_dir=$rant_dir/Avatar
 export YJ_rant_dir=$rant_dir/Young_Justice
 
+# Writing dir
+export writing_dir=$dev_dir/Writing
+export hoh_dir=$writing_dir/HeroesOfHillshire
+
 # Kao Tessur Commands
 alias akao="cd $kao_dir"
 alias akaogames="cd $kao_games_dir"
@@ -79,6 +83,13 @@ alias relink-nytram="rm Nytram.dll; ln $nytram_src/cpp/runner/NytramRunner/x64/D
 
 # Nyt Owl Commands
 alias note="python -u $nytowl_src/main.py"
+alias s-nytowl="nytowl; start"
+alias rant="cd $rant_dir; note"
+alias avatar-rant="cd $avatar_rant_dir; note"
+alias yj-rant="cd $YJ_rant_dir; note"
+
+# Writing Commands
+alias a-heroes-of-hllshire="cd $hoh_dir"
 alias s-nytowl="nytowl; start"
 alias rant="cd $rant_dir; note"
 alias avatar-rant="cd $avatar_rant_dir; note"
