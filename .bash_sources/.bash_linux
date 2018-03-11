@@ -1,6 +1,6 @@
 #! /usr/bin/bash
 
-export root_dir="/home"
+export root_dir="/home/cloew"
 alias install="sudo apt-get install"
 
 function run() {
