@@ -24,6 +24,9 @@ function get-apt-cyg() {
 	apt-cyg install unzip
 }
 
+# Sublime Text Aliases
+alias st="run $ide_dir/Sublime/sublime_text.exe"
+
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 export VIRTUALENVWRAPPER_VIRTUALENV=/usr/bin/virtualenv
 export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
