@@ -2,7 +2,7 @@
 
 # Source all local profiles
 
-for file in .bash_kao .bash_excelcient .bash_odesk
+for file in .bash_writing
 do
     if [ -f ~/.bash_sources/$file ]; then
         source ~/.bash_sources/$file
