@@ -54,6 +54,7 @@ export hoh_dir=$writing_dir/HeroesOfHillshire
 
 # Kao Tessur Commands
 alias akao="cd $kao_dir"
+alias akaoclis="cd $kao_cli_dir"
 alias akaogames="cd $kao_games_dir"
 alias akaolib="cd $kao_lib_dir"
 
@@ -73,6 +74,34 @@ alias db-endturn='curl -i -H "Content-Type: application/json" -X POST http://127
 
 # Galaga Commands
 alias a-galaga="cd $galaga_dir"
+
+# Japanese Commands
+export kanaverter_dir="$kao_cli_dir/kanaverter"
+alias a-kanaverter="cd $kanaverter_dir"
+function kanaverter() {
+    currDir=`pwd`
+    a-kanaverter
+    args=$@
+    echo $args
+    wpy3 main.py $1 $2 "$3"
+    cd $currDir
+}
+alias kanaverter-after="wm3 -p after"
+alias kanaverter-group="wm3 -p group"
+alias kanaverter-jisho="wm3 -p jisho"
+alias knv-after="kanaverter-after"
+alias knv-group="kanaverter-group"
+alias knv-jisho="kanaverter-jisho"
+
+export kanji_stroke_scraper_dir="$kao_cli_dir/kanji-stroke-scraper"
+alias a-kanji-stroke-scaper="cd $kanji_stroke_scraper_dir"
+function kanji-stroke-scaper() {
+    currDir=`pwd`
+    a-kanji-stroke-scaper
+    wpy3 main.py $@
+    cd $currDir
+}
+alias kss="kanji-stroke-scaper"
 
 # LOL Code Commands
 alias a-lolcode="cd $lol_code_parser_dir"
