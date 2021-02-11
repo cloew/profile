@@ -89,9 +89,13 @@ function kanaverter() {
 alias kanaverter-after="wm3 -p after"
 alias kanaverter-group="wm3 -p group"
 alias kanaverter-jisho="wm3 -p jisho"
+alias kanaverter-mine="wm3 -p mine"
+alias kanaverter-ruby="wm3 -p ruby"
 alias knv-after="kanaverter-after"
 alias knv-group="kanaverter-group"
 alias knv-jisho="kanaverter-jisho"
+alias knv-mine="kanaverter-mine"
+alias knv-ruby="kanaverter-ruby"
 
 export kanji_stroke_scraper_dir="$kao_cli_dir/kanji-stroke-scraper"
 alias a-kanji-stroke-scaper="cd $kanji_stroke_scraper_dir"
