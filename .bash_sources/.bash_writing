@@ -1,5 +1,5 @@
 #! /usr/bin/bash
 
-export writing_dir="$dev_dir/Writing"
+export writing_dir="$root_dir/Writing"
 
 alias awriting="cd $writing_dir"
