@@ -1,0 +1,17 @@
+
+function curl-get {
+  url=$1
+  curl -X GET -H "Content-Type: application/json" -d {} $url
+}
+
+function curl-post {
+  url=$1
+  data=$2
+  curl -X POST -H "Content-Type: application/json" -d $data $url
+}
+
+function curl-put {
+  url=$1
+  data=$2
+  curl -X PUT -H "Content-Type: application/json" -d $data $url
+}
