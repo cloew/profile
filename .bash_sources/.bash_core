@@ -119,6 +119,9 @@ alias dj-deploy="dj-manage deploy"
 # Panda Aliases
 alias ppy="$panda_dir/python/ppython.exe"
 
+# NPM aliases
+alias npx-webpack="npx webpack"
+
 # Ruby Aliases
 alias wruby="$wruby_bin_dir/ruby.exe"
 alias wgem="$wruby_bin_dir/gem.bat"
