@@ -15,3 +15,8 @@ function curl-put {
   data=$2
   curl -X PUT -H "Content-Type: application/json" -d $data $url
 }
+
+function curl-delete {
+  url=$1
+  curl -X DELETE -H "Content-Type: application/json" -d {} $url
+}
