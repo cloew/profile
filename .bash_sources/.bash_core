@@ -171,14 +171,14 @@ function mkgitdir () {
 
 function g-merge-branch() {
     currentBranch=`g-curr-branch`
-    gch master
+    gch ${1-master}
     gm $currentBranch
     gps
 }
 
 function g-finish-branch() {
     currentBranch=`g-curr-branch`
-    g-merge-branch
+    g-merge-branch $1
     g-del-branch $currentBranch
 }
 
