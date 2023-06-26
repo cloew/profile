@@ -334,3 +334,8 @@ function mk-bower-package  {
     gcm 'Added Boilerplate Package code'
     gps
 }
+
+function heroku-login  {
+    heroku login -i
+    cp ~/_netrc ~/.netrc
+}
